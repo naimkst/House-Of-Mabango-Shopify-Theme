@@ -1,0 +1,179 @@
+<style>
+  .blog-grid {
+    padding: 70px 0;
+    background: {{ section.settings.background_color }};
+  }
+  .blockgridContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+  }
+  .blog-grid-header {
+    text-align: center;
+  }
+
+  .blockgridContainer,
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+
+  .blockgridContainer .subtitle {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  /* Grid Container */
+  .blockgridContainer .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Default: 3 columns */
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  /* Media Query for Mobile - 1 column */
+  @media (max-width: 768px) {
+    .blockgridContainer .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .blockgridContainer .card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+
+  .blockgridContainer .card img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .blockgridContainer .card-content {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .blockgridContainer .card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .blockgridContainer .card a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+    text-decoration: underline;
+    border: none;
+  }
+
+  .blockgridContainer .card a:hover {
+    text-decoration: underline;
+  }
+  .blogCard {
+    cursor: pointer;
+  }
+  .card-image {
+    height: 370px;
+    overflow: hidden;
+    display: inline-table;
+  }
+  .blogCard .blogImage {
+    transition: transform 0.3s ease-in-out;
+    /* Add transition to normal state */
+  }
+
+  .blogCard:hover .blogImage {
+    transform: scale(1.1);
+    /* Scale image on hover */
+  }
+
+</style>
+
+<div class="blog-grid">
+  <div class="blockgridContainer">
+    <div class="blog-hero-content">
+      <h2>{{ section.settings.title }}</h2>
+      <span>{{ section.settings.subtitle }}</span>
+
+    </div>
+
+    <div class="grid">
+
+      {% assign limit = section.settings.blog_limit %}
+      {% for article in blog.articles reversed limit: limit %}
+        {% if current_tags == blank or article.tags contains current_tags.first %}
+          <div class="card blogCard">
+            <div class="card-image">
+              <img
+                src="{{ article.image | image_url: width: 800 }}"
+                width=""
+                height=""
+                class="blogImage"
+                alt="{{ article.title }}">
+            </div>
+
+            <div class="card-content">
+              <h3>{{ article.title }}</h3>
+              <a href="{{ article.url }}">Read more</a>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Blog Grid",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#fafafa"
+      }, {
+        "type": "range",
+        "id": "blog_limit",
+        "label": "Blogs to show",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "default": 9
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "THE BEE HIVE"
+      }, {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Tips, routines & more"
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Blog Grid"
+      }
+    ]
+  }
+{% endschema %}

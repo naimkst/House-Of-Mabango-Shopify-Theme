@@ -1,0 +1,297 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product_slider_MEbxWW": {
+      "type": "product-slider",
+      "blocks": {
+        "product_9YmQaK": {
+          "type": "product",
+          "settings": {
+            "tab_title": "Mabango Web Exclusives",
+            "tab_collection": "frontpage"
+          }
+        }
+      },
+      "block_order": [
+        "product_9YmQaK"
+      ],
+      "settings": {
+        "title": "INTRODUCING THE LINEUP"
+      }
+    },
+    "faq_section_dCCyFM": {
+      "type": "faq-section",
+      "blocks": {
+        "title_Y7ixwp": {
+          "type": "title",
+          "settings": {
+            "faq_title": "GENERAL"
+          }
+        },
+        "section_CQh79M": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "section_MnKcyX": {
+          "type": "section",
+          "settings": {
+            "question": "What are the benefits?",
+            "answer": "Composed of a unique, intensely hydrating blend of Mirsalehi Honey and our Bee Garden Oils, with added Jojoba oil and Meadowfoam seed oil for even more hydration and longer wear, simply glide our non-sticky, shine formula onto bare lips to unveil the smoothest, glossiest, most irresistible lips."
+          }
+        },
+        "title_QzfdKe": {
+          "type": "title",
+          "settings": {
+            "faq_title": "GENERAL"
+          }
+        },
+        "section_WEqgW6": {
+          "type": "section",
+          "settings": {
+            "question": "Do the tinted lippies have a flavor?",
+            "answer": "While we wouldn't recommend making our lip oils your main course, we've infused them with scents so delicious, that you might be tempted to take a nibble. Each of our lippies has a specific scent that offers a delightful scent experience. Indulge in Mango Passion Punch, Strawberry Sorbet, and Watermelon Sugar, and let your lips feel the fruity freshness!"
+          }
+        },
+        "section_RBNQtE": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "section_QQ6ked": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "section_ixUARj": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "title_dmMXD9": {
+          "type": "title",
+          "settings": {
+            "faq_title": "DELIVERY"
+          }
+        },
+        "section_yJn3mL": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "section_wPWHMi": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "section_PAyhcV": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "title_g4MU9x": {
+          "type": "title",
+          "settings": {
+            "faq_title": "SHIPPING"
+          }
+        },
+        "section_KwHEG7": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "section_3XxeeN": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "section_fYhPHa": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "section_aTDUfT": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "section_U77GQx": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "section_Hkwqkw": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        },
+        "section_gfYgqJ": {
+          "type": "section",
+          "settings": {
+            "question": "Do the 3 lip oils tinted come in a single box?",
+            "answer": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        }
+      },
+      "block_order": [
+        "title_Y7ixwp",
+        "section_CQh79M",
+        "section_MnKcyX",
+        "title_QzfdKe",
+        "section_WEqgW6",
+        "section_RBNQtE",
+        "section_QQ6ked",
+        "section_ixUARj",
+        "title_dmMXD9",
+        "section_yJn3mL",
+        "section_wPWHMi",
+        "section_PAyhcV",
+        "title_g4MU9x",
+        "section_KwHEG7",
+        "section_3XxeeN",
+        "section_fYhPHa",
+        "section_aTDUfT",
+        "section_U77GQx",
+        "section_Hkwqkw",
+        "section_gfYgqJ"
+      ],
+      "settings": {
+        "title": "FREQUENTLY ASKED QUESTIONS",
+        "description": "Everything you need to know about the Honey Infused Lip Oil Tinted Trio.",
+        "background_color": "#fff6da"
+      }
+    },
+    "instagram_section_KYBhwe": {
+      "type": "instagram-section",
+      "blocks": {
+        "section_mPNtt4": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/medium.jpg"
+          }
+        },
+        "section_yj3Kdn": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/medium_3.jpg"
+          }
+        },
+        "section_pUnMr8": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/medium_9.jpg"
+          }
+        },
+        "section_E9WtXi": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/medium_1.jpg"
+          }
+        },
+        "section_W7tiaf": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/medium_8.jpg"
+          }
+        },
+        "section_prWPrG": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/medium.jpg"
+          }
+        },
+        "section_F9W3xi": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/medium_6.jpg"
+          }
+        },
+        "section_pLTz9b": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/medium_5.jpg"
+          }
+        },
+        "section_Q69aWp": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/medium_7.jpg"
+          }
+        },
+        "section_iFjVn6": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/medium_2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "section_mPNtt4",
+        "section_yj3Kdn",
+        "section_pUnMr8",
+        "section_E9WtXi",
+        "section_W7tiaf",
+        "section_prWPrG",
+        "section_F9W3xi",
+        "section_pLTz9b",
+        "section_Q69aWp",
+        "section_iFjVn6"
+      ],
+      "settings": {
+        "title": "THE #GISOUHIVE",
+        "description": "Share what you love @gisou",
+        "instagram_url": ""
+      }
+    },
+    "video_section_TkT7nJ": {
+      "type": "video-section",
+      "settings": {
+        "video_url": "shopify:\/\/files\/videos\/Charise - MabangoÌ - Test.mp4",
+        "title": "New & Limited Edition Drop",
+        "description": "<p>Drench your lips in juicy, honey infused hydration,in a delicious cherry scent and <strong>sheer red shimmerthis<\/strong> holiday season.<\/p><p>Paired with hyaluronic acid and added jojoba and <strong>meadowfoam seed oils<\/strong> for extra hydration and smooth, glossy lips.<\/p>",
+        "button_url": "",
+        "button_text": "Shop Now",
+        "background_color": "#fef5d7"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_slider_MEbxWW",
+    "faq_section_dCCyFM",
+    "instagram_section_KYBhwe",
+    "video_section_TkT7nJ"
+  ]
+}

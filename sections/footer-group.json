@@ -1,0 +1,90 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "custom_footer_aNj3Hm": {
+      "type": "custom-footer",
+      "settings": {
+        "newsletter_title": "SIGN UP FOR MABANGÓ LOVE LETTERS",
+        "newsletter_description": "Be the first to know about upcoming promotions, exciting new product launches and all things Mabangó and get a 15% discount off your first order while you're at it",
+        "note_text": "Your personal data is processed according to our Privacy Policy.",
+        "cutomer_care_links": "customer-care",
+        "customer_links_title": "Customer care",
+        "contact_links": "contact-us",
+        "contact_links_title": "about mabango",
+        "policies_links": "policies",
+        "policies_links_title": "legal",
+        "custom_links": "",
+        "custom_links_title": "",
+        "background_color": "#fcea9f",
+        "facebook_url": "https:\/\/www.facebook.com\/share\/184H5WxdbU\/?mibextid=LQQJ4d",
+        "instagram_url": "https:\/\/www.instagram.com\/houseofmabango",
+        "tiktok_url": "https:\/\/www.tiktok.com\/@houseofmabango?_t=8rPdHFa3fEG&_r=1",
+        "youtube_url": "https:\/\/www.youtube.com\/@HouseofMabang%C3%B3",
+        "popup_button_text": "Get 15% Off",
+        "popup_title": "SIGN UP FOR MABANGÓ LOVE LETTERS",
+        "popup_background_color": "#ffd7da",
+        "popup_description": "SIGN UP FOR MABANGÓ LOVE LETTERS Sign up for the latest news and exclusive offers now and get 15% off your first order.",
+        "popup_note": "<p><em>Your personal data is processed according to our Privacy Policy.<\/em><\/p>",
+        "popup_image": "shopify:\/\/shop_images\/DSC00266.jpg"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our email list for exclusive offers and the latest news. <\/p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 44,
+        "padding_bottom": 8
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 44,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "custom_footer_aNj3Hm",
+    "newsletter",
+    "footer"
+  ]
+}

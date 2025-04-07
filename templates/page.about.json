@@ -1,0 +1,106 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_HC8qPx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4fddnQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_FPtdzV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome to the World of Mabangó<\/p><p><\/p><p>Mabangó is built around this idea that beautiful scents create memories that are everlasting, making your happy place, your rituals of care just a laundry basket away. We create modern laundry detergent and laundry perfume-mindfully formulated. Our fragrances are inspired by memories, moments, experiences and feelings- those that are intimately personal and universally shared. But most of al, our fragrances are inspired by the beauty of the Philippines. Hoping it will provide daily pleasures as you wash your favourites.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4fddnQ",
+        "text_FPtdzV"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multirow_Yhb4Fa": {
+      "type": "multirow",
+      "blocks": {
+        "row_GkURzA": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC09699.jpg",
+            "caption": "Meet founder and creative director",
+            "heading": "Charise Abigail",
+            "text": "<p>Mabangó’s DNA is really rooted in this idea of creating stories and memories through scent and to find pleasure in daily rituals of care. There is a sticker on our laundry detergent box that sums up words like; sunsets, seashells and tan lines to remind everyone to step into the Mabangó world and escape the mundane, even just for a minute, or two.<\/p><p>So you might be asking, “Why Laundry?”<\/p><p>I remember watching my mother do the laundry; washing, sorting and then ironing every piece while I would watch Oprah followed by The Bold and the Beautiful with her (for those wondering, I’m a 90’s kid and this was all we watched after school and before dinner). I always thought laundry to be quite mundane. It turns out, it were the rituals of care. So I thought, why not bring pleasure to these daily<br\/>rituals, by making garments smell like summer and sunsets and remind us of all the amazing memories we made in them. Something only a scent can do. <\/p><p>I’m beyond excited to share with you all of the new product formats that we are developing. Thank you for joining me on this exciting journey. I appreciate your love and support and I can’t wait to share more.<\/p><p>xoxo<br\/>Charise<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_3z8BkT": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC09347.jpg",
+            "caption": "Our Philosophy on",
+            "heading": "Sustainability",
+            "text": "<p>Sustainability has always been a priority at Mabangó. <\/p><p>We believe we can make thoughtful choices along the way that can reduce our impact on the planet while still being functional and beautiful. <em>All of our paper-based packaging is made of FSC-certified paper from sustainably managed forests and we are continuously looking for ways to improve our packaging by working with more recycled, recyclable and biodegradable materials.<\/em><\/p><p><em>Our laundry detergent sheets are formulated with plant-based ingredients. Hypoallergenic, plastic free, paraben free, gentle on your skin and the environment.<\/em><\/p><p><em>We also work with an amazing non profit organisation called Save Philippines Seas and donate 1% of each order towards protecting and conserving coastal and marine resources in the Philippines<\/em><\/p><p>As we learn more, we will do more, but for today we are happy with our accomplishments so far.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_rDA4tW": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_09_11_Mabango_2288.jpg",
+            "caption": "VOLUME 1",
+            "heading": "Mabangó Magazine",
+            "text": "<p>This volume, our very first, is an ode to our rituals of care. A little read while you wait for that laundry to dry. Get to know Saskia Koerner, the woman behind the lens of our campaign shoot in Bali as she talks about photography, how she stays inspired and the things she is most passionate about. Get to know Charise on a deeper level as she shares how Mabangó started, what gets her up and running in the morning and about her own rituals of care. And most importantly, get to know Anna the woman behind Save Philippine Seas. SPS is the non-profit organization we work with, donating 1% of each order made through our website to their important cause; aiming to conserve coastal and marine resources by empowering citizens for collective action and behavior change. <\/p>",
+            "button_label": "Read more",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0833\/0379\/2982\/files\/HouseofMabango_Magazine_Volume_1.pdf?v=1731961457"
+          }
+        }
+      },
+      "block_order": [
+        "row_GkURzA",
+        "row_3z8BkT",
+        "row_rDA4tW"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_HC8qPx",
+    "multirow_Yhb4Fa"
+  ]
+}

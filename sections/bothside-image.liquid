@@ -1,0 +1,124 @@
+<style>
+  .featureBox {
+    width: 80%;
+    margin: 0 auto;
+    padding: 70px 0;
+  }
+  .featureImageBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+  }
+  .featureImageBox img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .featureImageBox .item {
+    width: 50%;
+    position: relative;
+
+  }
+  .item h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 20px;
+  }
+  li.product__media-item.grid__item.scroll-trigger.animate--fade-in img {
+    width: 100px;
+    height: 100px;
+  }
+  @media screen and (max-width: 768px) {
+    .featureImageBox {
+      flex-direction: column;
+      gap: 6px;
+    }
+    .featureImageBox img {
+      height: 400px;
+    }
+    .featureImageBox .item {
+      width: 100%;
+    }
+    .featureBox {
+      width: 94%;
+    }
+  }
+</style>
+
+
+<div class="featureBox">
+  <div class="section-title">
+    <h2>{{ section.settings.title }}</h2>
+  </div>
+  <div class="featureImageBox">
+    {% for block in section.blocks %}
+      <div class="item">
+        <img
+          src="{{ block.settings.image | image_url: width: 1000 }}"
+          width=""
+          height=""
+          alt="">
+
+        <a href="{{ block.settings.link }}">
+          <h3>{{ block.settings.image_title }}</h3>
+        </a>
+      </div>
+    {% endfor %}
+
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Image Both Side Banner",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Featured Collection"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Item",
+        "type": "product",
+        "settings": [
+          {
+            "type": "text",
+            "id": "image_title",
+            "label": "Image Title",
+            "default": "Perfume"
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Title"
+          }, {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Image Both Side Banner",
+        "blocks": [
+          {
+            "type": "product"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

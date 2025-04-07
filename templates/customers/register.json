@@ -1,0 +1,15 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-register",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 72,
+        "secton_image": "shopify:\/\/shop_images\/2024_09_11_Mabango_2787.jpg"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

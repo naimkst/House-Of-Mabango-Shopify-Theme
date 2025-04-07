@@ -1,0 +1,194 @@
+<section class="product-area section-padding productGridSection">
+  <div class="page-width">
+    {% if section.settings.title != blank %}
+      <div class="section-title slider-section-title">
+        <h2>{{ section.settings.title }}</h2>
+      </div>
+    {% endif %}
+    {% if section.settings.tab_title != blank %}
+      <div class="product-tab tabs">
+        <button class="tab-link active allow">{{ section.settings.tab_title }}</button>
+      </div>
+    {% endif %}
+    <div class="tab-content active">
+      <div class="product-wrap">
+        <div class="row-grids single-product-grid desktopView">
+          {% assign single_product = section.settings.product %}
+          {% if section.settings.product != blank %}
+            {% for product in section.settings.product %}
+              <div class="grid product-grid">
+                <div class="product-item">
+                  <div class="product-img">
+                    <a href="{{ product.url }}">
+                      <img
+                        src="{{ product.featured_image | image_url: width: 900 }}"
+                        alt="{{ product.title }}"
+                        width="900"
+                        height="auto">
+                    </a>
+                    <div class="offer-thumb">
+                      {% if product.tags != blank %}
+                        {% for tag in single_product.tags %}
+                          {% if tag != "Active" %}
+                            <span>
+                              {{ tag }}
+                            </span>
+                          {% endif %}
+                        {% endfor %}
+                      {% endif %}
+
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <div class="product-top">
+                      <h3>
+                        <a href="{{ product.url }}">{{ product.title }}</a>
+                      </h3>
+                      <div class="product-btm">
+                        <span
+                          class="reviewCount"
+                          id="reviewCount1"
+                          data-productId="{{product.id}}">0 Reviews</span>
+                        <div class="product-ratting">
+                          <ul>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-btn addToCart" onclick="addToCart({{ product.variants.first.id }})">
+                      <input
+                        type="hidden"
+                        name="id"
+                        id="variantId"
+                        value="{{ single_product.variants.first.id }}">
+                      <input
+                        type="hidden"
+                        name="quantity"
+                        id="quantity"
+                        value="1"
+                        min="1">
+                      <span>
+                        Add to Bag
+                        {{ product.price | money }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          {% else %}
+            <p>No product selected.</p>
+          {% endif %}
+        </div>
+        <div class="row-grids single-product-grid mobileView productGrid owl-carousel">
+          {% assign single_product = section.settings.product %}
+          {% if section.settings.product != blank %}
+            {% for product in section.settings.product %}
+              <div class="grid product-grid">
+                <div class="product-item">
+                  <div class="product-img">
+                    <a href="{{ product.url }}">
+                      <img
+                        src="{{ product.featured_image | image_url: width: 900 }}"
+                        alt="{{ product.title }}"
+                        width="900"
+                        height="auto">
+                    </a>
+                    <div class="offer-thumb">
+                      {% if product.tags != blank %}
+                        {% for tag in single_product.tags %}
+                          {% if tag != "Active" %}
+                            <span>
+                              {{ tag }}
+                            </span>
+                          {% endif %}
+                        {% endfor %}
+                      {% endif %}
+
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <div class="product-top">
+                      <h3>
+                        <a href="{{ product.url }}">{{ product.title }}</a>
+                      </h3>
+                      <div class="product-btm">
+                        <span
+                          class="reviewCount"
+                          id="reviewCount1"
+                          data-productId="{{product.id}}">0 Reviews</span>
+                        <div class="product-ratting">
+                          <ul>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-btn addToCart" onclick="addToCart({{ product.variants.first.id }})">
+                      <input
+                        type="hidden"
+                        name="id"
+                        id="variantId"
+                        value="{{ single_product.variants.first.id }}">
+                      <input
+                        type="hidden"
+                        name="quantity"
+                        id="quantity"
+                        value="1"
+                        min="1">
+                      <span>
+                        Add to Bag
+                        {{ product.price | money }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          {% else %}
+            <p>No product selected.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Product Grid",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "INTRODUCING THE LINEUP"
+      }, {
+        "type": "text",
+        "id": "tab_title",
+        "label": "Tab Title",
+        "default": "Mabango Web Exclusives"
+      }, {
+        "type": "product_list",
+        "id": "product",
+        "label": "Add Products"
+      }
+    ],
+
+
+    "presets": [
+      {
+        "name": "Product Grid"
+
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,396 @@
+<!-- start of footer-section -->
+<footer class="footer-section" style="background-color: {{ section.settings.background_color }};">
+  <div class="upper-footer">
+    <div class="my-container">
+      <div class="footer-grids">
+        <div class="footer-grid">
+          <div class="widget newslatter-widget">
+            <h3>{{ section.settings.newsletter_title }}</h3>
+            <p>{{ section.settings.newsletter_description }}</p>
+            {% comment %} {% form 'customer' %}
+                                                                                                                                            <div class="inputBox">
+                                                                                                                                              <input
+                                                                                                                                                type="hidden"
+                                                                                                                                                name="contact[newsletter]"
+                                                                                                                                                value="newsletter">
+
+                                                                                                                                              <input
+                                                                                                                                                type="text"
+                                                                                                                                                placeholder="Enter your email"
+                                                                                                                                                name="contact[email]">
+                                                                                                                                              <button>Subscribe</button>
+                                                                                                                                            </div>
+
+                                                                                                                                            {{ form.errors | default_errors }}
+                                                                                                                                            <div>
+
+                                                                                                                                              {% if form.posted_successfully? %}
+                                                                                                                                                <p class="text-center mt-2">Thank you for signing up!
+                                                                                                                                                </p>
+                                                                                                                                              {% endif %}
+                                                                                                                                            </div>
+
+                                                                                                                        {%- endform -%} {% endcomment %}
+
+            <div class="klaviyo-form-SjauwM"></div>
+            <p>{{ section.settings.note_text }}</p>
+            <ul>
+              {% if section.settings.facebook_url != blank %}
+                <li>
+                  <a href="{{ section.settings.facebook_url }}"><img
+                      src="{{ 'facebook.png' | asset_url }}"
+                      width=""
+                      height=""
+                      alt=""></a>
+                </li>
+              {% endif %}
+              {% if section.settings.instagram_url != blank %}
+
+                <li>
+                  <a href="{{ section.settings.instagram_url }}"><img
+                      src="{{ 'instagram.png' | asset_url }}"
+                      width=""
+                      height=""
+                      alt=""></a>
+                </li>
+              {% endif %}
+              {% if section.settings.tiktok_url != blank %}
+                <li>
+                  <a href="{{ section.settings.tiktok_url }}"><img
+                      src="{{ 'tik-tok.png' | asset_url }}"
+                      width=""
+                      height=""
+                      alt=""></a>
+                </li>
+              {% endif %}
+              {% if section.settings.youtube_url != blank %}
+                <li>
+                  <a href="{{ section.settings.youtube_url }}"><img
+                      src="{{ 'youtube.png' | asset_url }}"
+                      width=""
+                      height=""
+                      alt=""></a>
+                </li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+        <div class="footer-grid menuGrid">
+          <div class="widget link-widget">
+            <div class="widget-title">
+              <span>{{ section.settings.customer_links_title }}</span>
+              <img
+                class="dropdownMenu downSvg"
+                src="{{ "down.svg" |  asset_url }}"
+                width=""
+                height=""
+                alt="">
+
+              <img
+                style="display: none;"
+                class="dropdownMenu upSvg"
+                src="{{ "up.svg" |  asset_url }}"
+                width=""
+                height=""
+                alt="">
+            </div>
+            <ul class="heightMenu">
+              {% for link in linklists[section.settings.cutomer_care_links].links %}
+                <li>
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="footer-grid menuGrid">
+          <div class="widget link-widget custom">
+            <div class="widget-title">
+              <span>{{ section.settings.contact_links_title }}</span>
+              <img
+                class="dropdownMenu downSvg"
+                src="{{ "down.svg" |  asset_url }}"
+                width=""
+                height=""
+                alt="">
+
+              <img
+                style="display: none;"
+                class="dropdownMenu upSvg"
+                src="{{ "up.svg" |  asset_url }}"
+                width=""
+                height=""
+                alt="">
+            </div>
+            <ul class="heightMenu">
+              {% for link in linklists[section.settings.contact_links].links %}
+                <li>
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="footer-grid menuGrid">
+          <div class="widget link-widget custom">
+            <div class="widget-title">
+              <span>{{ section.settings.policies_links_title }}</span>
+              <img
+                class="dropdownMenu downSvg"
+                src="{{ "down.svg" |  asset_url }}"
+                width=""
+                height=""
+                alt="">
+
+              <img
+                style="display: none;"
+                class="dropdownMenu upSvg"
+                src="{{ "up.svg" |  asset_url }}"
+                width=""
+                height=""
+                alt="">
+            </div>
+            <ul class="heightMenu">
+              {% for link in linklists[section.settings.policies_links].links %}
+                <li>
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="footer-grid menuGrid">
+          <div class="widget link-widget custom">
+            <div class="widget-title">
+              <span>{{ section.settings.custom_links_title }}</span>
+
+            </div>
+            <ul class="heightMenu">
+              {% for link in linklists[section.settings.custom_links].links %}
+                <li>
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobileweglot"></div>
+      <div class="footer-payments">
+        <ul class="payment-icons">
+          <li><img
+              src="https://cdn.shopify.com/s/files/1/0833/0379/2982/files/Untitled_design_8_7ef43393-bb41-4254-82f6-95fa2bc90be3.png?v=1732802293"
+              alt="Visa"
+              width=""
+              height=""></li>
+        </ul>
+      </div>
+    </div>
+  <!-- end container -->
+  </div>
+</footer>
+
+
+<!-- start newsletter-popup-area-section -->
+<section class="newsletter-popup-area-section" id="myPopup1">
+  <div class="newsletter-popup-area">
+    <div class="newsletter-popup-ineer">
+      <button class="btn newsletter-close-btn" id="closePopup">&#10005</button>
+      <div class="details">
+        <h4>{{ section.settings.popup_title }}</h4>
+        <p>{{ section.settings.popup_description }}</p>
+        {% comment %} {% form 'customer' %}
+                                                                      <input
+                                                                        type="hidden"
+                                                                        name="contact[tags]"
+                                                                        value="newsletter">
+                                                                      <div>
+                                                                        <input
+                                                                          type="email"
+                                                                          placeholder="Enter your email"
+                                                                          name="contact[email]" />
+                                                                        <button type="submit">Join Now</button>
+                                                                        {{ form.errors | default_errors }}
+                                                                        {% if form.posted_successfully? %}
+                                                                          <p class="text-center mt-2">Thank you for signing up!
+                                                                          </p>
+                                                                        {% endif %}
+                                                                      </div>
+                                                        {%- endform -%} {% endcomment %}
+
+        <div class="klaviyo-form-WAQips"></div>
+        {{ section.settings.popup_note }}
+      </div>
+      <div class="img-holder">
+        <img
+          src="{{ section.settings.popup_image | image_url: width: 900   }}"
+          alt=""
+          width=""
+          height="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="offer-area">
+  <div class="offer-wrap" style="background: {{ section.settings.popup_background_color }}">
+    <div class="offer-inner openBtns">
+      <h4>{{ section.settings.popup_button_text }}</h4>
+    </div>
+    <div class="close">
+      <span>&#10005</span>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  /* Start Payment Image Style - By InTouch */
+  .footer-payments {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-payments h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .payment-icons {
+    list-style: none;
+    margin-left: 15px;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+  }
+
+  .payment-icons li {
+    display: inline-block;
+  }
+
+  .payment-icons img {
+    max-width: 100%;
+    height: 65px;
+  }
+  /* End Payment Image Style - By InTouch */
+</style>
+
+
+{% schema %}
+  {
+    "name": "Footer Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "newsletter_title",
+        "label": "Newsletter Title",
+        "default": "Join the House of Mabango."
+      },
+      {
+        "type": "text",
+        "id": "newsletter_description",
+        "label": "Newsletter Description",
+        "default": "Sign in now and get 10% off your next purchase! It sounds like you want to users"
+      },
+      {
+        "type": "text",
+        "id": "note_text",
+        "label": "Note Text",
+        "default": "If you're implementing this in a web project, Privacy you could me know if you need help with the design or implementation!"
+      },
+      {
+        "type": "link_list",
+        "id": "cutomer_care_links",
+        "label": "Customer Care Links"
+      }, {
+        "type": "text",
+        "id": "customer_links_title",
+        "label": "Customer Care Links Title",
+        "default": "Customer Care"
+      }, {
+        "type": "link_list",
+        "id": "contact_links",
+        "label": "Contact Us Links"
+      }, {
+        "type": "text",
+        "id": "contact_links_title",
+        "label": "Contact Us Links Title",
+        "default": "Contact Us"
+      }, {
+        "type": "link_list",
+        "id": "policies_links",
+        "label": "Policies Links"
+      }, {
+        "type": "text",
+        "id": "policies_links_title",
+        "label": "Policies Links Title",
+        "default": "Policies"
+      }, {
+        "type": "link_list",
+        "id": "custom_links",
+        "label": "Custom Links"
+      }, {
+        "type": "text",
+        "id": "custom_links_title",
+        "label": "Custom Links Title",
+        "default": "Custom"
+      }, {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#fef5d7"
+      }, {
+        "type": "url",
+        "id": "facebook_url",
+        "label": "Facebook URL"
+      }, {
+        "type": "url",
+        "id": "instagram_url",
+        "label": "Instagram URL"
+      }, {
+        "type": "url",
+        "id": "tiktok_url",
+        "label": "TikTok URL"
+      }, {
+        "type": "url",
+        "id": "youtube_url",
+        "label": "Youtube URL"
+      }, {
+        "type": "text",
+        "id": "popup_button_text",
+        "label": "Popup Button Text",
+        "default": "Get 10% Off"
+      }, {
+        "type": "text",
+        "id": "popup_title",
+        "label": "Popup Title",
+        "default": "Get 25% discount shipped to your inbox"
+      }, {
+        "type": "color",
+        "id": "popup_background_color",
+        "label": "Popup ButtonBackground Color",
+        "default": "#000000"
+      }, {
+        "type": "text",
+        "id": "popup_description",
+        "label": "Popup Description",
+        "default": "Sign in now and get 10% off your next purchase! It sounds like you want to message offering a 10% discount to users who sign in. Here's how you might phrase"
+      }, {
+        "type": "richtext",
+        "id": "popup_note",
+        "label": "Popup Note",
+        "default": "<p>If you're implementing this in a web project, Privacy you could use it or part of a promotional email. Let me know if you need help with the design or implementation</p>"
+      }, {
+        "type": "image_picker",
+        "id": "popup_image",
+        "label": "Popup Image"
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Footer Section"
+      }
+    ]
+  }
+{% endschema %}

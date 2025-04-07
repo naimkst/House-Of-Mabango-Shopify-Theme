@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-login",
+      "settings": {
+        "enable_shop_login_button": true,
+        "padding_top": 36,
+        "padding_bottom": 72,
+        "secton_image": "shopify:\/\/shop_images\/DSC09548.jpg"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

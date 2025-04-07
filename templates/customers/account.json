@@ -1,0 +1,20 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-account",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 72,
+        "banner_image": "shopify:\/\/shop_images\/DSC09926.jpg",
+        "banner_title": "Laundry Detergent",
+        "banner_subtitle": "New",
+        "banner_description": "Just one sheet away from fresh, clean and fragrant laundry",
+        "banner_link": "shopify:\/\/collections\/laundry-detergent-sheets",
+        "banner_link_text": "Shop Now"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

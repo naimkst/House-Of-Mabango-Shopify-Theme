@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false,
+        "padding_top": 0,
+        "padding_bottom": 68
+      }
+    },
+    "blog_hero_6nwATH": {
+      "type": "blog-hero",
+      "settings": {
+        "blog_hero_title": "THE LAUNDRY BLOG",
+        "blog_hero_subtitle": "Dive into the world of House Of Mabangó",
+        "description": "Not sure how to use our products or where to start? Discover everything there is to know about our products, how to use them and how to incorporate them into your routine.",
+        "background_color": "#fafafa"
+      }
+    },
+    "feature_blog_PPEc3M": {
+      "type": "feature-blog",
+      "settings": {
+        "background_color": "#fafafa",
+        "article": "blog\/laundry-detergent-sheets-benefits-and-how-to-use",
+        "article_2": "blog\/laundry-detergent-sheets-benefits-and-how-to-use",
+        "article_3": "blog\/sustainable-laundry-made-easy"
+      }
+    },
+    "blog_grid_Jx9qfR": {
+      "type": "blog-grid",
+      "settings": {
+        "background_color": "#fafafa",
+        "blog_limit": 9,
+        "title": "POPULAR READS",
+        "subtitle": "Tips, Laundry Routines & More"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "blog_hero_6nwATH",
+    "feature_blog_PPEc3M",
+    "blog_grid_Jx9qfR"
+  ]
+}

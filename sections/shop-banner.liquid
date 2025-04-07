@@ -1,0 +1,87 @@
+<style>
+  .shop-banner {
+    max-width: 1120px;
+    margin: 30px auto 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+
+  }
+  .banner-image img {
+    width: 100%;
+    display: inherit;
+    height: 320px;
+    object-fit: cover;
+  }
+  .shop-banner .banner-image {
+    width: 50%;
+
+  }
+  .shop-banner .banner-content {
+    width: 50%;
+    padding-right: 60px;
+    padding-left: 60px;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .shop-banner {
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 0 25px;
+    }
+    .shop-banner .banner-image {
+      width: 100%;
+
+    }
+    .shop-banner .banner-content {
+      width: 100%;
+    }
+    .banner-image img {
+      height: 200px;
+    }
+
+  }
+</style>
+<div class="shop-banner">
+  <div class="banner-image"><img
+      src="{{ section.settings.shop_image |  image_url: width: 1500  }}"
+      alt=""
+      width=""
+      height=""></div>
+  <div class="banner-content">
+    <h2>{{ section.settings.shop_title }}</h2>
+    <p>{{ section.settings.shop_description }}</p>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Shop Banner",
+    "settings": [
+      {
+        "type": "text",
+        "id": "shop_title",
+        "label": "Shop Title",
+        "default": "Shop All"
+      }, {
+        "type": "text",
+        "id": "shop_description",
+        "label": "Shop Description",
+        "default": "Discover houseofmabango's complete haircare, styling and complexion line made with honey and propolis, sustainably sourced from the Mirsalehi Bee Garden."
+      }, {
+        "type": "image_picker",
+        "id": "shop_image",
+        "label": "Shop Image"
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Shop Banner"
+      }
+    ]
+  }
+{% endschema %}

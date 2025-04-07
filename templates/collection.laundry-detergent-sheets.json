@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "shop_banner_iQix3h": {
+      "type": "shop-banner",
+      "settings": {
+        "shop_title": "Laundry Detergents",
+        "shop_description": "Innovative laundry detergents designed to deliver powerful cleaning while being gentle on both your clothes and the environment. Our products are made with plant-based ingredients, offering a more natural approach to your laundry routine.",
+        "shop_image": "shopify:\/\/shop_images\/Screen_Shot_2024-11-15_at_12.08.12.png"
+      }
+    },
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "main-collection-product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 20,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 68
+      }
+    }
+  },
+  "order": [
+    "shop_banner_iQix3h",
+    "main-collection-banner",
+    "main-collection-product-grid"
+  ]
+}

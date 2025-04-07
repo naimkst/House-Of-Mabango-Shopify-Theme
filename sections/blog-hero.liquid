@@ -1,0 +1,183 @@
+<style>
+  .blog-hero {
+    background-color: {{ section.settings.background_color }};
+    padding: 60px 15px;
+    position: relative;
+  }
+  .blog-hero-content {
+    text-align: center;
+  }
+  .blog-hero-content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .blog-hero-content span {
+    background-color: #f9e8e7;
+    padding: 5px 10px;
+    border-radius: 6px;
+  }
+  .pageContainer {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .blog-search img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .blog-search input {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px #0003;
+    font-size: 14px;
+    height: 50px;
+    width: 100%;
+    padding: 0 55px;
+    outline: none;
+  }
+  .blog-search {
+    bottom: -25px;
+    position: absolute;
+    z-index: 2;
+    width: 780px;
+  }
+  .blog-searchBox {
+    position: relative;
+  }
+  .blog-searchBox img {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+  .blog-categories {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .blog-categories-content ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+  }
+  .blog-categories-content ul li a {
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+  }
+  .blog-categories-content ul li a.active {
+    font-weight: 700;
+  }
+  .blogSerchSection {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 768px) {
+    .blog-search {
+      width: 92%;
+    }
+    .blog-categories {
+      overflow: hidden;
+    }
+
+    .blog-categories-content ul {
+      gap: 15px;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+
+  }
+</style>
+
+<div class="blog-hero">
+  <div class="pageContainer">
+    <div class="blog-hero-content">
+      <h2>{{ section.settings.blog_hero_title }}</h2>
+      <span>{{ section.settings.blog_hero_subtitle }}</span>
+      {% if section.settings.description != null %}
+        <p>{{ section.settings.description }}</p>
+      {% endif %}
+    </div>
+
+    <div class="blogSerchSection">
+      <div class="blog-search">
+        <form action="/search" method="get">
+          <div class="blog-searchBox">
+            <img
+              src="{{ 'search.png' | asset_url }}"
+              width=""
+              height=""
+              alt="">
+            <input
+              type="text"
+              name="q"
+              placeholder="Search blog posts..."
+              required>
+            <input
+              type="hidden"
+              name="type"
+              value="article">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="blog-categories">
+  <div class="blog-categories-content">
+
+    <ul>
+      <li>
+        <a class=" {% if current_tags %}{% else %}active{% endif %}" href="/blogs/blog">All articles</a>
+      </li>
+      {% for tag in blog.all_tags %}
+
+        <li>
+          <a class="{% if current_tags contains tag %}active{% endif %}" href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</div>
+
+
+{% schema %}
+  {
+    "name": "Blog Hero",
+    "settings": [
+      {
+        "type": "text",
+        "id": "blog_hero_title",
+        "label": "Blog Hero Title",
+        "default": "THE BEE HIVE"
+      }, {
+        "type": "text",
+        "id": "blog_hero_subtitle",
+        "label": "Blog Hero Subtitle",
+        "default": "Dive into the world of House Of Mabango"
+      }, {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Not sure how to use our products or where to start? Discover eveyrything there is to know about our products, how to use them and how to incorporate them into your routine."
+      }, {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#fafafa"
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Blog Hero"
+      }
+    ]
+  }
+{% endschema %}

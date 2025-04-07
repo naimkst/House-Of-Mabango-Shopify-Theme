@@ -1,0 +1,303 @@
+{
+  "sections": {
+    "hero_section_VpfdcB": {
+      "type": "hero-section",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/250115_Mabango_Iris_Tempelaar_67637.jpg",
+        "mobile_background_image": "shopify:\/\/shop_images\/Mabango_Gina_Shoot_2611245656.jpg",
+        "title": "WE MADE A NEW LAUNDRY BESTIE..",
+        "description": "TROPICAL! NATURAL! NOURISHING!",
+        "button_url": "shopify:\/\/collections\/laundry-detergent-sheets",
+        "button_text": "Shop Now",
+        "title_color": "#ffffff",
+        "title_weight": "bold",
+        "title_size": 32,
+        "description_color": "#ffffff",
+        "description_weight": "bold",
+        "description_size": 16,
+        "button_color": "#ffffff",
+        "button_bg_color": "#000000"
+      }
+    },
+    "product_grid_single_wNhVCy": {
+      "type": "product-grid-single",
+      "settings": {
+        "title": "only on mabangó.com",
+        "tab_title": "WASH YOUR WORRIES AWAY",
+        "product": [
+          "laundry-detergent-sheets",
+          "laundry-soapbar"
+        ]
+      }
+    },
+    "announcement_slider_F7Mnij": {
+      "type": "announcement-slider",
+      "blocks": {
+        "announcement_DjPcCz": {
+          "type": "announcement",
+          "settings": {
+            "anaouncement_text": "YOUR PERFECT LAUNDRY ROUTINE STARTS NOW"
+          }
+        },
+        "announcement_frCJnB": {
+          "type": "announcement",
+          "settings": {
+            "anaouncement_text": "YOUR PERFECT LAUNDRY ROUTINE STARTS NOW"
+          }
+        },
+        "announcement_Weicae": {
+          "type": "announcement",
+          "settings": {
+            "anaouncement_text": "YOUR PERFECT LAUNDRY ROUTINE STARTS NOW"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_DjPcCz",
+        "announcement_frCJnB",
+        "announcement_Weicae"
+      ],
+      "settings": {
+        "background_color": "#fcea9f",
+        "text_color": "#000000"
+      }
+    },
+    "image_banner_T4RJrA": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSC09926.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "info_section_qHpWHe": {
+      "type": "info-section",
+      "blocks": {
+        "slider_zQ8PP8": {
+          "type": "slider",
+          "settings": {
+            "title": "Free Shipping on all orders over €35",
+            "image": "shopify:\/\/shop_images\/package.png"
+          }
+        },
+        "slider_HjGa37": {
+          "type": "slider",
+          "settings": {
+            "title": "Same-day shipping on all orders placed before 10 PM on business days",
+            "image": "shopify:\/\/shop_images\/truck.png"
+          }
+        },
+        "slider_QANt9m": {
+          "type": "slider",
+          "settings": {
+            "title": "1% of your order to Save Philippine Seas",
+            "image": "shopify:\/\/shop_images\/basket-heart.png"
+          }
+        },
+        "slider_7CQcxA": {
+          "type": "slider",
+          "settings": {
+            "title": "Save up on multi packs",
+            "image": "shopify:\/\/shop_images\/shopping-bag-discount.png"
+          }
+        }
+      },
+      "block_order": [
+        "slider_zQ8PP8",
+        "slider_HjGa37",
+        "slider_QANt9m",
+        "slider_7CQcxA"
+      ],
+      "settings": {
+        "bg_color": "#f8f8f8",
+        "mrg_top": 20,
+        "mrg_btn": 1
+      }
+    },
+    "video_section_pTbqar": {
+      "type": "video-section",
+      "settings": {
+        "video_url": "shopify:\/\/files\/videos\/Video 5 (zonder muziek).mp4",
+        "title": "WHEN SUMMER MEETS A LAUNDRY DETERGENT",
+        "subtitle": "exclusive drop",
+        "description": "<p>Highly concentrated, eco-friendly laundry detergent condensed into dissolvable sheets and milldy enhanced with our <strong>Ylang in the Sun<\/strong> fragrance. Formulated with plant-based ingredients, our detergent provides a gentle yet powerful clean. Hypoallergenic, plastic free, paraben free, gentle on your skin and the environment. <em>Get your must-have Ylang in the Sun sheets so summer never ends…<\/em><\/p>",
+        "button_url": "",
+        "button_text": "Shop Now",
+        "background_color": "#fef5d7"
+      }
+    },
+    "bothside_image_nckDTn": {
+      "type": "bothside-image",
+      "blocks": {
+        "product_GQzjYQ": {
+          "type": "product",
+          "settings": {
+            "image_title": "THE BLOG",
+            "image": "shopify:\/\/shop_images\/250115_Mabango_Iris_Tempelaar_67650_e2f37cf8-2d80-42b6-952c-948ffb2a08d7.jpg",
+            "title": "YLANG IN THE SUN",
+            "link": "https:\/\/houseofmabango.com\/blogs\/blog"
+          }
+        },
+        "product_HjcnhR": {
+          "type": "product",
+          "settings": {
+            "image_title": "MABANGÓ MAGAZINE",
+            "image": "shopify:\/\/shop_images\/Mabango_Gina_Shoot_2611246694.jpg",
+            "title": "VOLUME 1",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0833\/0379\/2982\/files\/HouseofMabango_Magazine_Volume_1.pdf?v=1731961457"
+          }
+        }
+      },
+      "block_order": [
+        "product_GQzjYQ",
+        "product_HjcnhR"
+      ],
+      "settings": {
+        "title": "Featured Collection"
+      }
+    },
+    "testimonial_nwbXfJ": {
+      "type": "testimonial",
+      "blocks": {
+        "slider_mxt7UM": {
+          "type": "slider",
+          "settings": {
+            "testimonial": "Mabangó not only looks beautiful, but smells beautiful too. Enriched with Ylang Ylang it gives my laundry a subtle fragrance which I love.",
+            "taring": 5
+          }
+        },
+        "slider_Y9jpFX": {
+          "type": "slider",
+          "settings": {
+            "testimonial": "I initially bought this product because it’s super easy for travel, especially with kids but have been using it at home ever since. Great value for money",
+            "taring": 5
+          }
+        },
+        "slider_UWfeHP": {
+          "type": "slider",
+          "settings": {
+            "testimonial": "It’s so easy to use, totally unique brand. For me it’s their sustainability pledge and their collaborations with non-profits. Totally changing the game in laundry detergent",
+            "taring": 4
+          }
+        },
+        "slider_mpjL4h": {
+          "type": "slider",
+          "settings": {
+            "testimonial": "The fragrance is very subtle, and works well for my sensitive skin",
+            "taring": 5
+          }
+        }
+      },
+      "block_order": [
+        "slider_mxt7UM",
+        "slider_Y9jpFX",
+        "slider_UWfeHP",
+        "slider_mpjL4h"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "instagram_section_K9p4qF": {
+      "type": "instagram-section",
+      "blocks": {
+        "section_AbCmMd": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/Mabango_Gina_Shoot_2611246878.jpg"
+          }
+        },
+        "section_c9phJN": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/2024_09_11_Mabango_2357.jpg"
+          }
+        },
+        "section_wNMb4k": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/2024_09_11_Mabango_3001.jpg"
+          }
+        },
+        "section_VwUrBq": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/2024_09_11_Mabango_0969.jpg"
+          }
+        },
+        "section_adKGBK": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/2024_09_11_Mabango_2374.jpg"
+          }
+        },
+        "section_k7Bezx": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/2024_09_11_Mabango_3112.jpg"
+          }
+        },
+        "section_cLYDjq": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/250318_Mabango_Iris_Tempelaar_9096.jpg"
+          }
+        },
+        "section_J3pyhB": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/2024_09_11_Mabango_1547.jpg"
+          }
+        },
+        "section_mMVpkG": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/2024_09_11_Mabango_2787.jpg"
+          }
+        },
+        "section_K8crbx": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/2024_09_11_Mabango_0002.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "section_AbCmMd",
+        "section_c9phJN",
+        "section_wNMb4k",
+        "section_VwUrBq",
+        "section_adKGBK",
+        "section_k7Bezx",
+        "section_cLYDjq",
+        "section_J3pyhB",
+        "section_mMVpkG",
+        "section_K8crbx"
+      ],
+      "settings": {
+        "title": "#MABANGOGIRLS",
+        "description": "Share your favourites @houseofmabango",
+        "instagram_url": "https:\/\/www.instagram.com\/houseofmabango"
+      }
+    }
+  },
+  "order": [
+    "hero_section_VpfdcB",
+    "product_grid_single_wNhVCy",
+    "announcement_slider_F7Mnij",
+    "image_banner_T4RJrA",
+    "info_section_qHpWHe",
+    "video_section_pTbqar",
+    "bothside_image_nckDTn",
+    "testimonial_nwbXfJ",
+    "instagram_section_K9p4qF"
+  ]
+}

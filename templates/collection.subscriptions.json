@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "shop_banner_iQix3h": {
+      "type": "shop-banner",
+      "settings": {
+        "shop_title": "Subscriptions",
+        "shop_description": "Discover Mabango's subscriptions. Choose a plan that works for you and save up to €10 on your laundry essentials on a monthly basis. Never worry about your laundry line-up ever again.",
+        "shop_image": "shopify:\/\/shop_images\/HOM-_Info_Banner_SUBSCIPTIONS.jpg"
+      }
+    },
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "main-collection-product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 20,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 68
+      }
+    }
+  },
+  "order": [
+    "shop_banner_iQix3h",
+    "main-collection-banner",
+    "main-collection-product-grid"
+  ]
+}

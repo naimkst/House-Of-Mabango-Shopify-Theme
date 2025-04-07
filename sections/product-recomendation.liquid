@@ -1,0 +1,130 @@
+<section class="product-area section-padding">
+  <div class="my-container">
+    {% if section.settings.title != blank %}
+      <div class="section-title slider-section-title">
+        <h2>{{ section.settings.title }}</h2>
+      </div>
+    {% endif %}
+
+    <div class="product-tab tabs">
+      {% for block in section.blocks %}
+        <button class="tab-link" data-tab="tab{{forloop.index}}">{{ block.settings.tab_title }}</button>
+      {% endfor %}
+    </div>
+    {% for block in section.blocks %}
+      <div id="tab{{forloop.index}}" class="tab-content">
+        <div class="product-wrap">
+          <div class="row-grids product-active owl-carousel">
+            {% for product in recommendations.products %}
+              <div class="grid">
+                <div class="product-item">
+                  <div class="product-img">
+                    <img
+                      src="{{ product.featured_image |  image_url: width: 900  }}"
+                      alt=""
+                      width=""
+                      height="">
+                    <div class="offer-thumb">
+                      {% if product.tags != blank %}
+                        {% for tag in product.tags %}
+                          {% if tag != "Active" %}
+                            <span>
+                              {{ tag }}
+                            </span>
+                          {% endif %}
+                        {% endfor %}
+                      {% endif %}
+                    </div>
+
+                  </div>
+                  <div class="product-content">
+                    <div class="product-top">
+                      <h3>
+                        <a href="{{ product.url }}">{{ product.title }}</a>
+                      </h3>
+                      <div class="product-btm">
+                        <span
+                          class="reviewCount"
+                          id="reviewCount1"
+                          data-productId="{{product.id}}">0 Reviews</span>
+                        <div class="product-ratting">
+                          <ul>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-btn addToCart" onclick="addToCart({{product.variants.first.id}})">
+                      <input
+                        type="hidden"
+                        name="id"
+                        id="variantId"
+                        value="{{ product.variants.first.id }}">
+                      <input
+                        type="hidden"
+                        name="quantity"
+                        id="quantity"
+                        value="1"
+                        min="1">
+                      <span>
+                        Add to Bag
+                        {{ product.price | money }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Product Recomendation",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "You may also like"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Collection Tab",
+        "type": "product",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_title",
+            "label": "Tab Title",
+            "default": "Mabango Web Exclusives"
+          }, {
+            "type": "collection",
+            "id": "tab_collection",
+            "label": "Tab Collection"
+          }
+        ]
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Product Recomendation",
+        "blocks": [
+          {
+            "type": "product"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
