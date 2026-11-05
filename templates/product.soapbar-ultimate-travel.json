@@ -1,0 +1,284 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "oru_product_rating_rating_6XEdCe": {
+          "type": "shopify://apps/oru-product-rating/blocks/rating/6dd3514e-f5b8-4275-b2b4-8655d3f6cb24",
+          "settings": {
+            "product": "laundry-soapbar",
+            "show_count": true,
+            "show_rating": true,
+            "position": "left"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "collapsible_tab_meXiLi": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details and Advantages",
+            "icon": "clipboard",
+            "content": "<p>Our 3-in-1 laundry detergent bar is designed to keep your clothes fresh wherever you go. Safe for all colours and fabrics, even wool and silk. Dissolves in seconds, making it perfect for quick hand washes or pre-treating stains on the go. Gentle yet effective, it’s free from harmful chemicals and microplastics while still powerful enough to tackle even the most stubborn stains.</p><ul><li>Plant based and hypoallergenic formula</li><li>Free from harsh chemicals and additives</li><li>Gentle formula for your skin</li><li><em>Free of dyes, parabens, and plastics.</em></li><li><em>Clean and safe option for sensitive skin</em></li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_MhPxK9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Washing Instructions",
+            "icon": "washing",
+            "content": "<p><em>Hand wash and pre-treat stains by rubbing the bar into the stain with warm water before washing as usual. Use a scrubbing brush or abrasive brush to help shift tough stains. Our Laundry Soapbar is also suitable for delicates.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_3EQ94z": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "return",
+            "content": "<ul><li>FREE SHIPPING on all orders over €30. We ship all our orders from the Netherlands.</li><li>Same-day shipping on all orders placed before 10 PM on business days</li><li>Easy returns process, hassle-free policy</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_6KNAmK": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Fragrance Notes",
+            "icon": "perfume",
+            "content": "<p>Our Ylang in the Sun bar is mildy scented with fragrance notes of Vanilla, Orange Blossom and Ylang in the Sun. </p>",
+            "page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "custom_liquid_7QbUKk": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0833/0379/2982/files/Untitled_design_8_7ef43393-bb41-4254-82f6-95fa2bc90be3.png?v=1732802293\" alt=\"Image Description\" style=\"max-width: 100%; height: auto;\">"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "oru_product_rating_rating_6XEdCe",
+        "description",
+        "price",
+        "collapsible_tab_meXiLi",
+        "collapsible_tab_MhPxK9",
+        "collapsible_tab_3EQ94z",
+        "collapsible_tab_6KNAmK",
+        "quantity_selector",
+        "variant_picker",
+        "buy_buttons",
+        "custom_liquid_7QbUKk"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "info_section_LdTYPY": {
+      "type": "info-section",
+      "blocks": {
+        "slider_my3g9P": {
+          "type": "slider",
+          "settings": {
+            "title": "Standard FREE SHIPPING above €30 in the Netherlands",
+            "image": "shopify://shop_images/package.png"
+          }
+        },
+        "slider_kFapwW": {
+          "type": "slider",
+          "settings": {
+            "title": "Same-day shipping on all orders placed before 10 PM on business days",
+            "image": "shopify://shop_images/truck.png"
+          }
+        },
+        "slider_i8r8FM": {
+          "type": "slider",
+          "settings": {
+            "title": "1% of your order goes to Save Philippine Seas",
+            "image": "shopify://shop_images/basket-heart.png"
+          }
+        },
+        "slider_9LbwfJ": {
+          "type": "slider",
+          "settings": {
+            "title": "Save up on multi packs",
+            "image": "shopify://shop_images/shopping-bag-discount.png"
+          }
+        }
+      },
+      "block_order": [
+        "slider_my3g9P",
+        "slider_kFapwW",
+        "slider_i8r8FM",
+        "slider_9LbwfJ"
+      ],
+      "settings": {
+        "bg_color": "#f8f8f8",
+        "mrg_top": 30,
+        "mrg_btn": 40
+      }
+    },
+    "video_4RFLwq": {
+      "type": "video",
+      "settings": {
+        "heading": "HOW TO USE",
+        "subtitle": "Multipurpose Travel Soapbar",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/copy_8910337D-6A5F-4EED-A0A5-A2F983E0532C.mov",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "faq_section_efbUKn": {
+      "type": "faq-section",
+      "blocks": {
+        "section_Wn3Lay": {
+          "type": "section",
+          "settings": {
+            "question": "How does it work?",
+            "answer": "Hand wash and pre-treat stains by rubbing the bar into the stain with warm water before washing as usual. Use a scrubbing brush or abrasive brush to help shift tough stains. Our Laundry Soapbar is also suitable for delicates and easy for travel!"
+          }
+        },
+        "section_9NNBHe": {
+          "type": "section",
+          "settings": {
+            "question": "What are the ingredients?",
+            "answer": "Sodium Palmate: Derived from sustainable palm oil, it creates a rich lather while gently cleansing and moisturizing your skin.Sodium Oleate: A mild surfactant from olive oil that ensures soft, smooth lather, perfect for sensitive skin.Water/Aqua: The base of the formula, ensuring easy application and a soothing, gentle cleanse.Glycerin: A natural humectant that draws moisture to the skin, leaving it soft and hydrated.Parfum/Fragrance: Natural or hypoallergenic fragrances that add a fresh, long-lasting scent.Sodium Hydroxide (NaOH): Used in small amounts to form soap, it’s neutralized to ensure a gentle, skin-friendly product.Sodium Chloride (NaCl): Naturally helps firm the soap and enhances its effectiveness.Sodium Hydrogen Carbonate (Baking Soda): A natural deodorizer and stain fighter for fresh, clean laundry.Zeolite: A mineral that softens water, boosts cleaning power, and helps eliminate odors.Ethylenediaminetetraacetic Acid (EDTA): Enhances cleaning performance, especially in hard water."
+          }
+        },
+        "section_YUTVE8": {
+          "type": "section",
+          "settings": {
+            "question": "Are they vegan and cruelty free?",
+            "answer": "Yes! Our products are never tested on animals and our Laundry Soapbar is also vegan!"
+          }
+        },
+        "section_x8n6jm": {
+          "type": "section",
+          "settings": {
+            "question": "Can I use the Soapbar for hand-wash?",
+            "answer": "Yes! Our Laundry Soapbar is designed for hand-washing and pre-treating stains and are your perfect travel bestie!"
+          }
+        }
+      },
+      "block_order": [
+        "section_Wn3Lay",
+        "section_9NNBHe",
+        "section_YUTVE8",
+        "section_x8n6jm"
+      ],
+      "settings": {
+        "title": "FAQ'S",
+        "description": "Everything you need to know about our Laundry Soapbar",
+        "background_color": "#fef5d7"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 68
+      }
+    },
+    "1758024501a0145a6a": {
+      "type": "apps",
+      "blocks": {
+        "oru_product_rating_single_product_review_xbQBx9": {
+          "type": "shopify://apps/oru-product-rating/blocks/single-product-review/6dd3514e-f5b8-4275-b2b4-8655d3f6cb24",
+          "settings": {
+            "product": "laundry-soapbar"
+          }
+        }
+      },
+      "block_order": [
+        "oru_product_rating_single_product_review_xbQBx9"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "info_section_LdTYPY",
+    "video_4RFLwq",
+    "faq_section_efbUKn",
+    "related-products",
+    "1758024501a0145a6a"
+  ]
+}

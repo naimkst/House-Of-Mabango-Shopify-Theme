@@ -1,0 +1,93 @@
+<div class="marquee-wrapper">
+  <div class="marquee-track">
+    {% for block in section.blocks %}
+      <p class="marqueList">{{ block.settings.anaouncement_text }}</p>
+    {% endfor %}
+
+    {%- comment -%} Duplicate content for seamless animation {%- endcomment -%}
+    {% for block in section.blocks %}
+      <p class="marqueList">{{ block.settings.anaouncement_text }}</p>
+    {% endfor %}
+  </div>
+
+  <style>
+    .marquee-wrapper {
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      background: {{ section.settings.background_color }};
+    }
+
+    .marquee-track {
+      display: inline-flex;
+      animation: scroll-left 15s linear infinite;
+    }
+
+    .marquee-track > * {
+      margin-right: 30px;
+    }
+
+    p.marqueList {
+      color: {{ section.settings.text_color }};
+      font-family: GlacialIndifference
+      , sans-serif !important;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 13px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</div>
+
+{% schema %}
+  {
+    "name": "Announcement Slider",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#fcea9f"
+      }, {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#000000"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "announcement",
+        "name": "Announcement",
+        "settings": [
+          {
+            "type": "text",
+            "id": "anaouncement_text",
+            "label": "Announcement Text",
+            "default": "This is an announcement block"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Announcement Slider",
+        "blocks": [
+          {
+            "type": "announcement"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

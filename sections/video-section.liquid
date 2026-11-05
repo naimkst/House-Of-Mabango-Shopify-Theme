@@ -1,0 +1,150 @@
+<style>
+  .videoSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 66%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 70px 0;
+    align-items: stretch;
+  }
+  .videoBox video {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  }
+  .videoBox {
+    width: 50%;
+    display: grid;
+  }
+  .imageBox img {
+    width: 100%;
+    height: 100%;
+  }
+  .contentBox {
+    width: 50%;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+  }
+  .contentBox a.button.button--primary {
+    width: 120px;
+  }
+  @media screen and (max-width: 768px) {
+    .videoSection {
+      width: 100%;
+      padding: 10px;
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+
+    .videoBox {
+      width: 100%;
+    }
+    .contentBox {
+      width: 100%;
+    }
+
+  }
+</style>
+
+
+<div class="videoSection">
+  <div class="videoBox">
+    {% if section.settings.video_url != blank %}
+      <video
+        class="no-controls"
+        src="{{ section.settings.video_url.sources[1].url }}"
+        playsinline
+        autoplay
+        loop
+        muted></video>
+    {% endif %}
+    {% if section.settings.image != blank %}
+      <img
+        src="{{ section.settings.image |  image_url: width: 1000  }}"
+        alt=""
+        width=""
+        height=""
+        alt="">
+    {% endif %}
+
+
+  </div>
+  <div class="contentBox">
+    <h2>
+      {{ section.settings.title }}
+    </h2>
+    {% if section.settings.subtitle %}
+      <div class="section-title cutomTitle videoSub">
+        <span class="product-tags-bg">{{ section.settings.subtitle }}</span>
+      </div>
+    {% endif %}
+
+    <div class="disBox">
+
+      {{ section.settings.description }}
+    </div>
+
+    <a class="button button--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Video Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "video",
+        "id": "video_url",
+        "label": "Video"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "New & Limited Edition Drop"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "default": "Subtitle",
+        "label": "Subtitle"
+      }, {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Drench your lips in juicy, honey infused hydration,in a delicious cherry scent and sheer red shimmerthis holiday season.Paired with hyaluronic acid and added jojoba and meadowfoam seed oils for extra hydration and smooth, glossy lips.</p>"
+      }, {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Shop Now"
+      }, {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#fef5d7"
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Video Section"
+      }
+    ]
+  }
+{% endschema %}

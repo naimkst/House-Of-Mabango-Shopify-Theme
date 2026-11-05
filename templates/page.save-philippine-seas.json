@@ -1,0 +1,119 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_7AQg6j": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_CRg9mX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Let's talk about SPS",
+            "heading_size": "h1"
+          }
+        },
+        "text_PYeLBP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If there were a movie made about the Philippine seas, it should be called Crazy Rich Oceans. The Philippines has been described as the center of marine biodiversity — but also the center of marine adversity. </p><p><em>Save Philippine Seas (SPS) is a non-profit organization that aims to empower seatizens towards collective action and behavior change. Our projects fall under three pillars: Waste Management and Circular Economy, Shark Conservation, and Environmental Education and Ocean Climate Action. </em></p>",
+            "text_style": "body"
+          }
+        },
+        "button_AemMbH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more",
+            "button_link": "https://www.savephilippineseas.org/",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CRg9mX",
+        "text_PYeLBP",
+        "button_AemMbH"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/SPS.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_gwexH4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_TwxYtk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mabangó x SPS",
+            "heading_size": "h1"
+          }
+        },
+        "text_Hapzxx": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>House of Mabangó donates 1% of each order through our website towards the support of </em> Save Philippine Seas and their projects for marine conservation and environmental education. We interviewed Anna, the founder of SPS in our VOL1 Mabangó Newspaper. Click on the link below for a look into SPS and the woman behind it. </p>",
+            "text_style": "body"
+          }
+        },
+        "button_TtTmGy": {
+          "type": "button",
+          "settings": {
+            "button_label": "Interview SPS",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TwxYtk",
+        "text_Hapzxx",
+        "button_TtTmGy"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/IMG_9670.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_7AQg6j",
+    "image_with_text_gwexH4"
+  ]
+}

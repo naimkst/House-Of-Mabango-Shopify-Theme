@@ -1,0 +1,429 @@
+<style>
+  .info-tabs {
+    padding: 60px 5%;
+    font-family: "Lato"
+    , Helvetica
+    , Arial
+    , sans-serif;
+  }
+
+  .tabs-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .tab-btn {
+    background: none;
+    border: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    color: #000;
+  }
+
+  .tab-btn.active {
+    color: #b8860b;
+  }
+
+  .tab-btn.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background: #b8860b;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .tab-content {
+    display: none;
+    transition: opacity 0.4s ease;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  .tab-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .text-panel {
+    flex: 1;
+    max-width: 400px;
+    position: sticky;
+    top: 100px;
+  }
+
+  .text-panel h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .text-panel ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+
+  .slider-panel {
+    flex: 1.5;
+    min-width: 400px;
+  }
+
+  #howToUseSlider ul.splide__list {
+    align-items: end;
+  }
+
+  /* ✅ Equal video heights */
+  #howToUseSlider .splide__slide {
+    border-radius: 12px;
+    background: #000;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    transition: all 0.2s ease-in-out;
+    /* transform: scale(0.40); */
+    opacity: 0.8;
+    height: 600px;
+
+  }
+  #howToUseSlider li.splide__slide.is-visible.is-active {
+    transform: scale(1);
+    opacity: 1;
+    height: 100% !important;
+  }
+
+  .slide-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+  /* BENEFITS / INGREDIENTS image size */
+  #benefitsSlider .splide__slide,
+  #ingredientsSlider .splide__slide {
+    overflow: hidden;
+    height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+  }
+
+  #benefitsSlider .splide__slide img,
+  #ingredientsSlider .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .tab-grid {
+      flex-direction: column;
+    }
+
+    .text-panel {
+      max-width: 100%;
+      order: 2;
+      text-align: center;
+    }
+
+    .slider-panel {
+      order: 1;
+      width: 100%;
+    }
+
+    .splide__slide {
+      height: 400px;
+    }
+  }
+</style>
+
+<!-- Splide -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<section id="product-info-tabs" class="info-tabs">
+  <div class="tabs-header">
+    <button class="tab-btn active" data-tab="how-to-use">How to Use</button>
+    <button class="tab-btn" data-tab="benefits">Benefits</button>
+    <button class="tab-btn" data-tab="ingredients">Ingredients</button>
+  </div>
+
+  <!-- HOW TO USE -->
+  <div id="how-to-use" class="tab-content active">
+    <div class="tab-grid">
+      <div class="text-panel" id="howToUseText">
+        <h2>Hydrate & Boost</h2>
+        <div>
+          <ul>
+            <li>Warm-up a few drops of our Honey Infused Hair Oil between the palms and work from mid-lengths to ends to lock in hydration, tame frizz, and boost shine.</li>
+            <li>For the softest, smoothest finish, cleanse and exfoliate lips before applying the honey lip oil.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slider-panel">
+        <div id="howToUseSlider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for block in section.blocks %}
+                {% if block.type == 'how_to_use' %}
+                  {% assign video = block.settings.video_url %}
+                  {% if video %}
+                    <li
+                      class="splide__slide"
+                      data-text="{{ block.settings.slide_text | escape }}"
+                      data-desc="{{ block.settings.tab_text | escape }}">
+                      <video
+                        class="slide-video"
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        poster="{{ video.preview_image | image_url }}">
+                        {% for source in video.sources %}
+                          <source src="{{ source.url }}" type="{{ source.mime_type }}">
+                        {% endfor %}
+                        Your browser does not support the video tag.
+                      </video>
+                    </li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BENEFITS -->
+  <div id="benefits" class="tab-content">
+    <div class="splide" id="benefitsSlider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for block in section.blocks %}
+            {% if block.type == 'benefits' %}
+              <li class="splide__slide">
+                <img
+                  src="{{ block.settings.image_url | image_url: width: 1000, height: 1000 }}"
+                  alt="image"
+                  width=""
+                  height="">
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- INGREDIENTS -->
+  <div id="ingredients" class="tab-content">
+    <div class="splide" id="ingredientsSlider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for block in section.blocks %}
+            {% if block.type == 'ingredients' %}
+              <li class="splide__slide">
+                <img
+                  src="{{ block.settings.image_url | image_url: width: 1000, height: 1000 }}"
+                  alt="image"
+                  width=""
+                  height="">
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    /* ---------------- Tabs ---------------- */
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+    tabs.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        tabs.forEach((t) => t.classList.remove('active'));
+        btn.classList.add('active');
+        const tabId = btn.dataset.tab;
+        contents.forEach((c) => c.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+
+    /* ---------------- Splide: HOW TO USE ---------------- */
+    const howToUse = new Splide('#howToUseSlider', {
+      type: 'loop',
+      perPage: 3,
+      perMove: 1,
+      gap: '1rem',
+      pagination: true,
+      arrows: true,
+      autoplay: false,
+      breakpoints: {
+        1024: { perPage: 2 },
+        768: { perPage: 1 },
+      },
+    });
+
+    const textPanel = document.getElementById('howToUseText');
+    const videos = document.querySelectorAll('#howToUseSlider .slide-video');
+    const pauseAll = () => videos.forEach((v) => v.pause());
+
+    function safePlay(video) {
+      if (!video) return;
+      video.muted = true; // keep muted for autoplay
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          setTimeout(() => video.play().catch(() => {}), 500);
+        });
+      }
+    }
+
+    // Handle slide move
+    howToUse.on('move', (newIndex) => {
+      pauseAll();
+      const activeSlide = howToUse.Components.Slides.getAt(newIndex).slide;
+      const video = activeSlide.querySelector('video');
+      if (video) {
+        video.currentTime = 0;
+        safePlay(video);
+      }
+
+      const newTitle = activeSlide.dataset.text || 'Hydrate & Boost';
+      const newDesc = activeSlide.dataset.desc || '';
+      textPanel.querySelector('h2').innerText = newTitle;
+      textPanel.querySelector('ul').innerHTML = newDesc;
+    });
+
+    howToUse.mount();
+
+    /* ✅ Auto-play first video immediately on page load */
+    window.addEventListener('load', () => {
+      const firstVideo = document.querySelector('#howToUseSlider .splide__slide.is-active video');
+      if (firstVideo) {
+        pauseAll();
+        safePlay(firstVideo);
+      }
+    });
+
+    /* ✅ Click-to-activate feature */
+    document.querySelectorAll('#howToUseSlider .splide__slide').forEach((slide, index) => {
+      slide.addEventListener('click', () => {
+        howToUse.go(index); // jump to clicked slide
+        pauseAll();
+        const video = slide.querySelector('video');
+        if (video) {
+          video.currentTime = 0;
+          safePlay(video);
+        }
+
+        // update text dynamically
+        const newTitle = slide.dataset.text || 'Hydrate & Boost';
+        const newDesc = slide.dataset.desc || '';
+        textPanel.querySelector('h2').innerText = newTitle;
+        textPanel.querySelector('ul').innerHTML = newDesc;
+      });
+    });
+
+    /* ---------------- BENEFITS Slider ---------------- */
+    new Splide('#benefitsSlider', {
+      type: 'loop',
+      perPage: 3,
+      perMove: 1,
+      gap: '1rem',
+      pagination: true,
+      arrows: true,
+      breakpoints: {
+        1024: { perPage: 2 },
+        768: { perPage: 1 },
+      },
+    }).mount();
+
+    /* ---------------- INGREDIENTS Slider ---------------- */
+    new Splide('#ingredientsSlider', {
+      type: 'loop',
+      perPage: 3,
+      perMove: 1,
+      gap: '1rem',
+      pagination: true,
+      arrows: true,
+      breakpoints: {
+        1024: { perPage: 2 },
+        768: { perPage: 1 },
+      },
+    }).mount();
+  });
+</script>
+
+
+{% schema %}
+  {
+    "name": "Feature Tab",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "how_to_use",
+        "name": "How To Use",
+        "settings": [
+          {
+            "type": "text",
+            "id": "slide_text",
+            "label": "Video Title",
+            "default": "Hydrate & Boost"
+          }, {
+            "type": "richtext",
+            "id": "tab_text",
+            "label": "Left Description",
+            "default": "<ul><li>Warm-up a few drops of Honey Infused Hair Oil.</li><li>For the softest finish, exfoliate before applying the lip oil.</li></ul>"
+          }, {
+            "type": "video",
+            "id": "video_url",
+            "label": "Video URL"
+          }
+        ]
+      }, {
+        "type": "benefits",
+        "name": "Benefits",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_url",
+            "label": "Image URL"
+          }
+        ]
+      }, {
+        "type": "ingredients",
+        "name": "Ingredients",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_url",
+            "label": "Image URL"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Feature Tab"
+      }
+    ]
+  }
+{% endschema %}

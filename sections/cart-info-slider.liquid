@@ -1,0 +1,65 @@
+<div class="owl-carousel owl-theme cart-info-slider" style="background: {{ section.settings.background_color }};">
+  {% for block in section.blocks %}
+    <div class="item-info">
+      <div class="info-icons"><img
+          src="{{ block.settings.Image | image_url: width: 50  }}"
+          alt=""
+          width=""
+          height=""></div>
+      <div class="info-content">
+        <a href="{{ block.settings.link }}">
+          <p>{{ block.settings.title }}</p>
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+
+</div>
+
+
+{% schema %}
+  {
+    "name": "Cart Info Slider",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#fbde7d"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Slider Item",
+        "type": "section",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "Image",
+            "label": "Instagram Image"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Free sample of choice with every order"
+          }, {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Cart Info Slider",
+        "blocks": [
+          {
+            "type": "section"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

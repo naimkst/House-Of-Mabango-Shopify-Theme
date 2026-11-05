@@ -1,0 +1,99 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "custom_footer_aNj3Hm": {
+      "type": "custom-footer",
+      "settings": {
+        "newsletter_title": "JOIN OUR COMMUNITY",
+        "newsletter_description": "Sign up to our newsletter to get 15% off your first order. Plus unlock exclusive access to new launches, private sales and community events.",
+        "note_text": "*Your personal data is processed in accordance with our Privacy Policy. No worries: you can unsubscribe at any time via the link in our messages or by contacting us via privacy@houseofmabango.com.",
+        "cutomer_care_links": "customer-care",
+        "customer_links_title": "Customer care",
+        "contact_links": "contact-us",
+        "contact_links_title": "about mabango",
+        "policies_links": "policies",
+        "policies_links_title": "legal",
+        "custom_links": "",
+        "custom_links_title": "",
+        "background_color": "#fcea9f",
+        "facebook_url": "https://www.facebook.com/share/184H5WxdbU/?mibextid=LQQJ4d",
+        "instagram_url": "https://www.instagram.com/houseofmabango",
+        "tiktok_url": "https://www.tiktok.com/@houseofmabango?_t=8rPdHFa3fEG&_r=1",
+        "youtube_url": "https://www.youtube.com/@HouseofMabang%C3%B3",
+        "popup_button_text": "Get 15% Off",
+        "popup_title": "SIGN UP FOR MABANGÓ LOVE LETTERS",
+        "popup_background_color": "#ffd7da",
+        "popup_description": "SIGN UP FOR MABANGÓ LOVE LETTERS Sign up for the latest news and exclusive offers now and get 15% off your first order.",
+        "popup_note": "<p><em>Your personal data is processed according to our Privacy Policy.</em></p>",
+        "popup_image": "shopify://shop_images/DSC00266.jpg"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "JOIN OUR COMMUNITY",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Sign up to our newsletter to get<strong>15% off</strong>your first order. Plus unlock exclusive access to new launches, private sales and community events.</p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 44,
+        "padding_bottom": 8
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 44,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "custom_footer_aNj3Hm",
+    "newsletter",
+    "footer"
+  ]
+}

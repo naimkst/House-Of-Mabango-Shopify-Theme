@@ -1,0 +1,219 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "description",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 2,
+        "columns_desktop": 1,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "info_section_mLU9m8": {
+      "type": "info-section",
+      "blocks": {
+        "slider_gbrmwf": {
+          "type": "slider",
+          "settings": {
+            "title": "Standard FREE SHIPPING above €30 in the Netherlands",
+            "image": "shopify://shop_images/package.png"
+          }
+        },
+        "slider_N4QJif": {
+          "type": "slider",
+          "settings": {
+            "title": "Same-day shipping on all orders placed before 10 PM on business days",
+            "image": "shopify://shop_images/truck.png"
+          }
+        },
+        "slider_BfntCx": {
+          "type": "slider",
+          "settings": {
+            "title": "1% of your order goes to Save Philippine Seas",
+            "image": "shopify://shop_images/basket-heart.png"
+          }
+        },
+        "slider_rq6PBV": {
+          "type": "slider",
+          "settings": {
+            "title": "Save up on multi packs and sets",
+            "image": "shopify://shop_images/shopping-bag-discount.png"
+          }
+        }
+      },
+      "block_order": [
+        "slider_gbrmwf",
+        "slider_N4QJif",
+        "slider_BfntCx",
+        "slider_rq6PBV"
+      ],
+      "name": "Info Section",
+      "settings": {
+        "bg_color": "#f8f8f8",
+        "mrg_top": 20,
+        "mrg_btn": 27
+      }
+    },
+    "faq_section_wBwmtf": {
+      "type": "faq-section",
+      "blocks": {
+        "section_cb4x44": {
+          "type": "section",
+          "settings": {
+            "question": "Is The Laundry Set suitable for all fabric types?",
+            "answer": "Yes. Our laundry detergent sheets and soap bar are formulated to be gentle on most fabrics, including cotton, linen, synthetics, and blends. For delicate fabrics like silk or wool, we recommend testing on a small area first and handwashing with extra care."
+          }
+        },
+        "section_gyBrNH": {
+          "type": "section",
+          "settings": {
+            "question": "What does the sheets + soap bar Set smell like?",
+            "answer": "Our laundry sheets and soap bar are both infused with our signature scent, Ylang in the Sun. Think tropical blooms of Ylang-Ylang, kissed with warm, sunlit notes — a fragrance that feels like fresh laundry drying in the island breeze. It leaves your clothes with a subtle, uplifting scent that’s never overpowering, just beautifully fresh and flowery."
+          }
+        },
+        "section_WBABfw": {
+          "type": "section",
+          "settings": {
+            "question": "What is so special about plant-based ingredients?",
+            "answer": "It cleans your clothes with natural, softer ingredients that are gentle on skin and safer for the planet."
+          }
+        },
+        "section_CNCyiF": {
+          "type": "section",
+          "settings": {
+            "question": "How do I use the Set?",
+            "answer": "Place a laundry detergent sheet directly in the drum with your clothes or in the compartment, it dissolves completely during the wash. For stains or handwashing, use the soap bar to gently lather and treat the fabric before rinsing. Both are perfect for travel too!"
+          }
+        }
+      },
+      "block_order": [
+        "section_cb4x44",
+        "section_gyBrNH",
+        "section_WBABfw",
+        "section_CNCyiF"
+      ],
+      "name": "FAQ Section",
+      "settings": {
+        "title": "FREQUENTLY ASKED QUESTIONS",
+        "description": "Everything you need to know about the Laundry Set",
+        "background_color": "#fef5d7"
+      }
+    },
+    "175871511332646424": {
+      "type": "apps",
+      "blocks": {
+        "oru_product_rating_single_product_review_gtQnVt": {
+          "type": "shopify://apps/oru-product-rating/blocks/single-product-review/6dd3514e-f5b8-4275-b2b4-8655d3f6cb24",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "oru_product_rating_single_product_review_gtQnVt"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "info_section_mLU9m8",
+    "faq_section_wBwmtf",
+    "175871511332646424"
+  ]
+}

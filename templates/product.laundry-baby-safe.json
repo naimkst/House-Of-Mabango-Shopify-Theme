@@ -1,0 +1,539 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "collapsible_tab_meXiLi": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details and Advantages",
+            "icon": "clipboard",
+            "content": "<ul><li>Free from harmful chemicals and microplastics</li><li>Biodegradable ingredients and packaging</li><li>Dissolves within seconds</li><li>Removes the most stubborn stains from your clothes</li><li>Help -Save Philippine Seas- by placing your order and we'll donate 1% towards their cause. </li></ul><p>Reduce your ecological footprint and choose plastic-free, plant-based laundry detergent</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_MhPxK9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Washing Instructions",
+            "icon": "washing",
+            "content": "<p>Upon contact with water our laundry detergent sheets will instantly return to their liquid state and mix with the water flow in your machine to give your clothes a proper clean! Add a sheet or two on top of your load, and wash as usual. For hand wash instructions scroll down to see how to hand wash your favourites perfectly. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_3EQ94z": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "return",
+            "content": "<ul><li>FREE SHIPPING on all orders over €30. We ship all our orders from the Netherlands.</li><li>Same-day shipping on all orders placed before 10 PM on business days</li><li>Easy returns process, hassle-free policy</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_6KNAmK": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Fragrance Notes",
+            "icon": "perfume",
+            "content": "<p>Our Ylang in the Sun sheets are mildy scented with fragrance notes of Vanilla, Orange Blossom and Ylang in the Sun. </p>",
+            "page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "custom_liquid_7QbUKk": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0833/0379/2982/files/Untitled_design_8_7ef43393-bb41-4254-82f6-95fa2bc90be3.png?v=1732802293\" alt=\"Image Description\" style=\"max-width: 100%; height: auto;\">"
+          }
+        },
+        "slider_WPQ3ej": {
+          "type": "slider",
+          "settings": {
+            "slider_text": "<p>Standard FREE SHIPPING above €30 in the Netherlands</p>"
+          }
+        },
+        "slider_D9LjBK": {
+          "type": "slider",
+          "settings": {
+            "slider_text": "<p>Same-day shipping on all orders placed before 10 PM on business days</p>"
+          }
+        },
+        "slider_w8dBBj": {
+          "type": "slider",
+          "settings": {
+            "slider_text": "<p>Buy now, pay later with Klarna</p>"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "description",
+        "price",
+        "collapsible_tab_meXiLi",
+        "collapsible_tab_MhPxK9",
+        "collapsible_tab_3EQ94z",
+        "collapsible_tab_6KNAmK",
+        "quantity_selector",
+        "variant_picker",
+        "buy_buttons",
+        "custom_liquid_7QbUKk",
+        "slider_WPQ3ej",
+        "slider_D9LjBK",
+        "slider_w8dBBj"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "info_section_LdTYPY": {
+      "type": "info-section",
+      "blocks": {
+        "slider_my3g9P": {
+          "type": "slider",
+          "settings": {
+            "title": "Standard FREE SHIPPING above €30 in the Netherlands",
+            "image": "shopify://shop_images/package.png"
+          }
+        },
+        "slider_kFapwW": {
+          "type": "slider",
+          "settings": {
+            "title": "Same-day shipping on all orders placed before 10 PM on business days",
+            "image": "shopify://shop_images/truck.png"
+          }
+        },
+        "slider_i8r8FM": {
+          "type": "slider",
+          "settings": {
+            "title": "1% of your order goes to Save Philippine Seas",
+            "image": "shopify://shop_images/basket-heart.png"
+          }
+        },
+        "slider_9LbwfJ": {
+          "type": "slider",
+          "settings": {
+            "title": "Save up on multi packs",
+            "image": "shopify://shop_images/shopping-bag-discount.png"
+          }
+        }
+      },
+      "block_order": [
+        "slider_my3g9P",
+        "slider_kFapwW",
+        "slider_i8r8FM",
+        "slider_9LbwfJ"
+      ],
+      "settings": {
+        "bg_color": "#f8f8f8",
+        "mrg_top": 30,
+        "mrg_btn": 40
+      }
+    },
+    "video_4RFLwq": {
+      "type": "video",
+      "settings": {
+        "heading": "HOW TO USE",
+        "subtitle": "For all washing machines including HE",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/X 1 small.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_dQATnp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_HFYwyF": {
+          "type": "column",
+          "settings": {
+            "title": "1. Tear and Go",
+            "text": "<p>Following the dosage guide on the back of your pack, pop your Mabangó sheets into the drum of your laundry machine underneath or on top of your washing (also applicable for hand wash)</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7pEA99": {
+          "type": "column",
+          "settings": {
+            "title": "2. Load and Wash",
+            "text": "<p>Load up your dirty washing, then start your machine as normal. Mabangó sheets work on hot, cold & quick washes, and are suitable for delicates too (add our Ylang in the Sun laundry perfume for a longer lasting fragrance)</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3WgUDP": {
+          "type": "column",
+          "settings": {
+            "title": "3. So Fresh and Clean",
+            "text": "<p>Hang your clean washing to dry and embrace the fragrance of our scented sheets. Laundry day has never been so easy.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_HFYwyF",
+        "column_7pEA99",
+        "column_3WgUDP"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_YYdDdU": {
+      "type": "multirow",
+      "blocks": {
+        "row_CGrRmc": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/250115_Mabango_Iris_Tempelaar_67650.jpg",
+            "caption": "GET TO KNOW OUR SHEETS",
+            "heading": "BENEFITS",
+            "text": "<ul><li>3-in-1 laundry detergent for all colours</li><li>Fabric softner, stain remover and detergent in 1</li><li>Quickly dissolves in cold and hot water</li><li>Suitable for all washing machines including HE</li><li>Suitable for all fabrics including wool and silk</li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_GNxcba": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Mabango_Gina_Shoot_2611245656.jpg",
+            "caption": "SHEETS THAT LOVE YOU",
+            "heading": "GENTLE ON SKIN",
+            "text": "<ul><li>Plant based and hypoallergenic formula</li><li>Free from harsh chemicals and additives</li><li>Gentle formula for your skin and the environment</li><li><em>Free of dyes, parabens, and plastics.</em></li><li><em>Clean and safe option for sensitive skin, babies and families</em></li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_dBKPFU": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/250115_Mabango_Iris_Tempelaar_67642.jpg",
+            "caption": "discover our key ingredients",
+            "heading": "INGREDIENTS",
+            "text": "<ul><li><em>Anionic Surfactants are plant-based cleaners that lift away dirt and stains. </em></li><li><em>Amphoteric Non-Ionic Surfactants boost cleaning power while being gentle on your skin.</em></li><li><em>Perfume adds our signature floral, summer-inspired fragrance. </em></li><li><em>Benzyl Alcohol and Benzoic Acid keep the formula fresh and effective. Our detergent is also free of unnecessary dyes, parabens, and plastics.</em></li></ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_CGrRmc",
+        "row_GNxcba",
+        "row_dBKPFU"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_section_BTLyPe": {
+      "type": "video-section",
+      "settings": {
+        "video_url": "shopify://files/videos/video-output-56E6346A-9D52-4D6E-911A-655775EF97CB.mov",
+        "title": "HOW TO USE",
+        "subtitle": "Handwash",
+        "description": "<p>Hand washing clothes using detergent sheets is a convenient and effective way to clean your clothes whether for delicates or that sweet summer vacay. Here are the steps to follow:</p><ul><li>Fill a basin or sink with cold water.</li><li>Add one or two detergent sheets to the water until dissolved</li><li>Add your clothes to the basin or sink and let them soak for 10-15 minutes.</li><li>Gently rub the clothes together to remove dirt and stains. Rinse thoroughly with cold water. Squeeze out the excess water and hang the clothes to dry.</li></ul>",
+        "button_url": "",
+        "button_text": "",
+        "background_color": "#fef5d7"
+      }
+    },
+    "faq_section_efbUKn": {
+      "type": "faq-section",
+      "blocks": {
+        "section_Wn3Lay": {
+          "type": "section",
+          "settings": {
+            "question": "How does it work?",
+            "answer": "Upon contact with water our sheets will instantly begin to return to their liquid state and mix with the water flow in your machine to give your clothes a proper clean! They work in all washes, even cold and quick."
+          }
+        },
+        "section_9NNBHe": {
+          "type": "section",
+          "settings": {
+            "question": "How many sheets do I need per wash?",
+            "answer": "The number of sheets you'll need to use can depend on a few factors, including the size of your laundry load, how dirty your clothes are and how soft/hard your water is. For a standard washing machine with a regular to large load, just half a sheet should do the trick.If  you're tackling a much larger load you might want to use a whole sheet or two. This ensures that the larger volume of water and clothing gets evenly cleaned."
+          }
+        },
+        "section_YUTVE8": {
+          "type": "section",
+          "settings": {
+            "question": "Are they vegan and cruelty free?",
+            "answer": "Yes! Our products are never tested on animals and our Laundry Detergent Sheets are also vegan!"
+          }
+        },
+        "section_x8n6jm": {
+          "type": "section",
+          "settings": {
+            "question": "What are the ingredients?",
+            "answer": " ≥30% anionic surfactants are plant-based cleaners that lift away dirt and stains.<5% amphoteric surfactants non-ionic surfactants boost cleaning power while being gentle on skin. Perfume adds our signature floral, summer-inspired fragrance. Benzyl alcohol and benzoic acid keep the formula fresh and effective. Contains: Sodium dodecyl sulfate; Inner salt of N-cocoacyl derivatives of (3-aminopropan-1-yl)(carboxymethyl)dimethylammonium and Ylang-Ylang oil. No Harsh Chemicals:  Our detergent is free of unnecessary dyes, parabens, and plastics."
+          }
+        },
+        "section_VBp9Nc": {
+          "type": "section",
+          "settings": {
+            "question": "Can I use the laundry detergent sheets for hand wash?",
+            "answer": "Yes! Our sheets instantly begin to return to their liquid state when in contact with water and are very easy to use for hand wash or travel."
+          }
+        },
+        "section_LLpxUC": {
+          "type": "section",
+          "settings": {
+            "question": "How strong is the scent after washing?",
+            "answer": "Keep in mind there are far less chemicals in our laundry detergent meaning the scent does not linger as long as regular laundry detergent and becomes more fragrant when fabric dries after washing."
+          }
+        }
+      },
+      "block_order": [
+        "section_Wn3Lay",
+        "section_9NNBHe",
+        "section_YUTVE8",
+        "section_x8n6jm",
+        "section_VBp9Nc",
+        "section_LLpxUC"
+      ],
+      "settings": {
+        "title": "FREQUENTLY ASKED QUESTIONS",
+        "description": "Everything you need to know about the Mabangó Laundry Detergent Sheets",
+        "background_color": "#fef5d7"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 68
+      }
+    },
+    "instagram_section_Uq9DTW": {
+      "type": "instagram-section",
+      "blocks": {
+        "section_tC7pFh": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify://shop_images/Mabango_Gina_Shoot_2611246769.jpg"
+          }
+        },
+        "section_4ELHBz": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify://shop_images/Mabango_Gina_Shoot_2611245656.jpg"
+          }
+        },
+        "section_bBzxV9": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify://shop_images/Mabango_April_2025_NEO1775_selects_filmgrain.jpg"
+          }
+        },
+        "section_AeFWbg": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify://shop_images/250115_Mabango_Iris_Tempelaar_67642.jpg"
+          }
+        },
+        "section_VANhUd": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify://shop_images/2024_09_11_Mabango_3112_3fce009c-d74b-4ebf-a37c-67f7d095977a.jpg"
+          }
+        },
+        "section_bzA3Je": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify://shop_images/250115_Mabango_Iris_Tempelaar_67659.jpg"
+          }
+        },
+        "section_gedTrY": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify://shop_images/DSC00040.jpg"
+          }
+        },
+        "section_Art6w3": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify://shop_images/2024_09_11_Mabango_2332.jpg"
+          }
+        },
+        "section_cGV6Ey": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify://shop_images/DSC09548_78a2958f-18e9-48d7-ba0a-2717752730cd.jpg"
+          }
+        },
+        "section_QDq4rA": {
+          "type": "section",
+          "settings": {
+            "Image": "shopify://shop_images/DSC00014.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "section_tC7pFh",
+        "section_4ELHBz",
+        "section_bBzxV9",
+        "section_AeFWbg",
+        "section_VANhUd",
+        "section_bzA3Je",
+        "section_gedTrY",
+        "section_Art6w3",
+        "section_cGV6Ey",
+        "section_QDq4rA"
+      ],
+      "settings": {
+        "title": "#MABANGOGIRLS",
+        "description": "Share your favourites @houseofmabango",
+        "instagram_url": ""
+      }
+    },
+    "1733914831d3550530": {
+      "type": "apps",
+      "blocks": {
+        "oru_product_rating_star_rating_BQ94zA": {
+          "type": "shopify://apps/oru-product-rating/blocks/star_rating/6dd3514e-f5b8-4275-b2b4-8655d3f6cb24",
+          "settings": {
+            "product": "{{product}}",
+            "colour": "#ff0000"
+          }
+        }
+      },
+      "block_order": [
+        "oru_product_rating_star_rating_BQ94zA"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1757584133e0aaba30": {
+      "type": "apps",
+      "blocks": {
+        "oru_product_rating_single_product_review_cR9BTC": {
+          "type": "shopify://apps/oru-product-rating/blocks/single-product-review/6dd3514e-f5b8-4275-b2b4-8655d3f6cb24",
+          "settings": {
+            "product": "laundry-detergent-sheets"
+          }
+        }
+      },
+      "block_order": [
+        "oru_product_rating_single_product_review_cR9BTC"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "info_section_LdTYPY",
+    "video_4RFLwq",
+    "multicolumn_dQATnp",
+    "multirow_YYdDdU",
+    "video_section_BTLyPe",
+    "faq_section_efbUKn",
+    "related-products",
+    "instagram_section_Uq9DTW",
+    "1733914831d3550530",
+    "1757584133e0aaba30"
+  ]
+}

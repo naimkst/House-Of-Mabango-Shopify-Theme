@@ -1,0 +1,240 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq_section_UpMfFD": {
+      "type": "faq-section",
+      "blocks": {
+        "title_RkmBtW": {
+          "type": "title",
+          "settings": {
+            "faq_title": "GENERAL"
+          }
+        },
+        "section_qRtC6Q": {
+          "type": "section",
+          "settings": {
+            "question": "What does Mabangó mean?",
+            "answer": "The name Mabangó in the Philippines translates to fragrant and pleasant smelling. Each laundry scent is inspired by the beautiful nature of the Philippines, as an ode to the mixed heritage of our founder Charise Rozenbeek."
+          }
+        },
+        "section_wDx4pV": {
+          "type": "section",
+          "settings": {
+            "question": "Where can I buy Mabangó?",
+            "answer": "Mabangó is available right here, on www.houseofmabango.com. Please see our Shipping & Returns page to double check if we ship to your country."
+          }
+        },
+        "section_Ay6QWc": {
+          "type": "section",
+          "settings": {
+            "question": "Do you offer any discounts or promotions?",
+            "answer": "All discounts or promotions are announced via our social channels and newsletter. Please subscribe to our newsletter if you haven't already so that you can be kept up to date and receive subscriber exclusive deals.We always offer free shipping on orders over €50."
+          }
+        },
+        "title_hMfwMw": {
+          "type": "title",
+          "settings": {
+            "faq_title": "SHIPPING AND RETURNS"
+          }
+        },
+        "section_nt8JEA": {
+          "type": "section",
+          "settings": {
+            "question": "Which countries do you ship to?",
+            "answer": "We ship to the Netherlands, Germany, Belgium, France and the United Kingdom and hope to expand in the near future."
+          }
+        },
+        "section_9wNPQM": {
+          "type": "section",
+          "settings": {
+            "question": "How long will it take to receive my order?",
+            "answer": "Please see the approximate shipping durations on our Shipping page."
+          }
+        },
+        "section_KxrfE8": {
+          "type": "section",
+          "settings": {
+            "question": "Can I return my order?",
+            "answer": "Yes, you can return your unused and unopened Mabangó products within 14 days after the shipment arrival date. Please note we do not cover return costs, which means these forwarding-charges will be for your own account. For more information or questions visit our return and refund page, or send us an email info@houseofmabango.com and we’ll be happy to help."
+          }
+        },
+        "section_Ya8HMD": {
+          "type": "section",
+          "settings": {
+            "question": "Is it possible to exchange or cancel my order?",
+            "answer": "We do not offer exchanges. You can however return your order unused and unopened within 14 days of the shipment arrival date. Please be advised once the order is placed we will not be able to cancel or change your order."
+          }
+        },
+        "section_t4eRWm": {
+          "type": "section",
+          "settings": {
+            "question": "I placed my order, what's next?",
+            "answer": "First, we do a little happy dance! You will soon receive an e-mail confirming your order. Our external dispatch company will prepare the orders placed through the webshop, usually these are shipped within 1 day! Once your order is sent out, you will receive an e-mail with your personal tracking code."
+          }
+        },
+        "section_hTzbrJ": {
+          "type": "section",
+          "settings": {
+            "question": "I think my package is lost, what do I do?",
+            "answer": "We always strive to provide the best possible service. In case your package was lost or you received it damaged please reach out to info@houseofmabango.com or through our contact form on the website so we can help you as soon as possible."
+          }
+        },
+        "section_LCkJim": {
+          "type": "section",
+          "settings": {
+            "question": "Why don't you ship worldwide?",
+            "answer": "We are working on it while we grow and hope to expand our shipping reach in the near future."
+          }
+        },
+        "title_dqCekM": {
+          "type": "title",
+          "settings": {
+            "faq_title": "PAYMENT"
+          }
+        },
+        "section_w3ETzQ": {
+          "type": "section",
+          "settings": {
+            "question": "Which payment methods do you accept?",
+            "answer": "We accept the following payment methods:iDealBancontactSofort BankingCredit Cards: Mastercard, VISA, Maestro, American ExpressPayPalApple PayGoogle PayShop PayKlarnaOther credit cards are not accepted but can possibly be added to a PayPal account after which you can then pay your order on our website using PayPal."
+          }
+        },
+        "section_7YNNea": {
+          "type": "section",
+          "settings": {
+            "question": "In what currency can I pay my order?",
+            "answer": "If you are purchasing from our EU website, all payments will be handled in Euros."
+          }
+        },
+        "section_V9Dn7E": {
+          "type": "section",
+          "settings": {
+            "question": "Will I have to pay import duties?",
+            "answer": "There is a possibility that you might have to pay import duties depending on the custom laws of the delivery country."
+          }
+        },
+        "section_LCTV7k": {
+          "type": "section",
+          "settings": {
+            "question": "How long does it take to receive my refund?",
+            "answer": "Depending on your method of payment it may take up to 14 days to receive your refund. You will receive the payment back on the account that you also paid from. "
+          }
+        },
+        "section_7ba8BY": {
+          "type": "section",
+          "settings": {
+            "question": "Where can I find my previous orders?",
+            "answer": "You receive an order summary in your order confirmation email after you have placed an order. You can also find your order history in your Mabangó account."
+          }
+        },
+        "title_VTmcej": {
+          "type": "title",
+          "settings": {
+            "faq_title": "SUSTAINABILITY"
+          }
+        },
+        "section_cN4Gx9": {
+          "type": "section",
+          "settings": {
+            "question": "Is the packaging made of sustainable materials?",
+            "answer": "We are committed to reducing our impact on the environment. All of our paper-based packaging is made of FSC-certified paper from sustainably managed forests and we are continuously looking for ways to improve our packaging by working with more recycled, recyclable and biodegradable materials."
+          }
+        },
+        "section_qpDrmX": {
+          "type": "section",
+          "settings": {
+            "question": "Where are your products manufactured?",
+            "answer": "All of our products are manufactured in China. Our Mabangó HQ is based in the Netherlands."
+          }
+        },
+        "section_3dYAcy": {
+          "type": "section",
+          "settings": {
+            "question": "Reducing Returns?",
+            "answer": "At Mabangó we try to motivate our consumer to shop responsibly.The tendency to order a lot of items online to return most of them, impacts the environment heavily. That is one of the reasons we aren't able to offer free shipping and returns.Do you have any tips, feedback or personal experience as a consumer? Let us know so we can improve our products, which could lead to fewer returns."
+          }
+        },
+        "section_RUGU9R": {
+          "type": "section",
+          "settings": {
+            "question": "How do you formulate your ingredients?",
+            "answer": "At House of Mabangó, we start with what matters most: skin-friendly formulations. Every ingredient is carefully chosen to be gentle, safe, and suitable for everyday use. From there, we go one step further by making sure our blends are also plant- and planet-friendly using biodegradable, plant-based surfactants and avoiding unnecessary harsh chemicals where possible.This way, our products not only care for your clothes and your skin, but also respect the environment they return to."
+          }
+        },
+        "section_kttcic": {
+          "type": "section",
+          "settings": {
+            "question": "Save Philippine Seas",
+            "answer": "We work with an amazing non profit organisation called Save Philippines Seas and donate 1% of each order towards protecting and conserving coastal and marine resources in the Philippines"
+          }
+        },
+        "title_Cw7Wy6": {
+          "type": "title",
+          "settings": {
+            "faq_title": "LAUNDRY HOTLINE"
+          }
+        },
+        "section_R4Tc39": {
+          "type": "section",
+          "settings": {
+            "question": "How do I use the laundry detergent sheets?",
+            "answer": "Following the dosage guide on the back of your box, pop your Mabangó sheets into the drum of your laundry machine underneath your washing (also applicable for hand wash). Load up your dirty washing, then start your machine as normal. Mabangó sheets work on hot, cold & quick washes, and are suitable for delicates too (add our Ylang in the Sun laundry perfume for a longer lasting fragrance)"
+          }
+        }
+      },
+      "block_order": [
+        "title_RkmBtW",
+        "section_qRtC6Q",
+        "section_wDx4pV",
+        "section_Ay6QWc",
+        "title_hMfwMw",
+        "section_nt8JEA",
+        "section_9wNPQM",
+        "section_KxrfE8",
+        "section_Ya8HMD",
+        "section_t4eRWm",
+        "section_hTzbrJ",
+        "section_LCkJim",
+        "title_dqCekM",
+        "section_w3ETzQ",
+        "section_7YNNea",
+        "section_V9Dn7E",
+        "section_LCTV7k",
+        "section_7ba8BY",
+        "title_VTmcej",
+        "section_cN4Gx9",
+        "section_qpDrmX",
+        "section_3dYAcy",
+        "section_RUGU9R",
+        "section_kttcic",
+        "title_Cw7Wy6",
+        "section_R4Tc39"
+      ],
+      "settings": {
+        "title": "FREQUENTLY ASKED QUESTIONS",
+        "description": "Everything you need to know about Mabangó",
+        "background_color": "#fef5d7"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq_section_UpMfFD"
+  ]
+}

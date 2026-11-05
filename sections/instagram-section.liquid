@@ -1,0 +1,81 @@
+<!-- gallery-area-start -->
+<section class="gallery-area section-padding instagramSection">
+  <div class="my-container-full">
+    <div class="section-title">
+      <h2>{{ section.settings.title }}</h2>
+      <h4>{{ section.settings.description }}</h4>
+    </div>
+    <div class="gallery-wrap">
+      <div class="gallery-grids">
+        {% for block in section.blocks %}
+          <div class="gallery-grid">
+            <a href="{{ section.settings.instagram_url }}" class="gallery-item">
+              <div class="gallery-img">
+                <img
+                  src="{{ block.settings.Image | image_url: width: 700  }}"
+                  alt=""
+                  width=""
+                  height="">
+              </div>
+              <div class="icon">
+                <img
+                  src="{{ 'instagram.png' | asset_url }}"
+                  alt=""
+                  width=""
+                  height="">
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Instagram Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "THE #HOUSEOFMABANGO"
+      }, {
+        "type": "text",
+        "id": "description",
+        "label": "Section Description",
+        "default": "Share what you love @house_of_mabango"
+      }, {
+        "type": "url",
+        "id": "instagram_url",
+        "label": "Instagram URL"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Instagram Item",
+        "type": "section",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "Image",
+            "label": "Instagram Image"
+          }
+        ]
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Instagram Section",
+        "blocks": [
+          {
+            "type": "section"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

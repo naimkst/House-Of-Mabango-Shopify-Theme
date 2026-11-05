@@ -1,0 +1,100 @@
+<div class="faq-section section-padding" style="background-color: {{ section.settings.background_color }};">
+  <div class="my-container">
+    <div class="faq-wrap">
+      <div class="faq-heading">
+        <div class="section-title">
+          <h2>{{ section.settings.title }}</h2>
+          <p>{{ section.settings.description }}</p>
+        </div>
+      </div>
+      <div class="faq-items">
+        <div class="accordion">
+          {% for block in section.blocks %}
+            {% if block.type == 'title' %}
+              <h2>{{ block.settings.faq_title }}</h2>
+            {% endif %}
+            {% if block.type == 'section' %}
+              <div class="accordion-item">
+                <button class="accordion-header">
+                  {{ block.settings.question }}
+                </button>
+                <div class="accordion-content">
+                  <p>{{ block.settings.answer }}</p>
+                </div>
+              </div>
+            {% endif %}
+
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "FAQ Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "FREQUENTLY ASKED QUESTIONS"
+      }, {
+        "type": "text",
+        "id": "description",
+        "label": "Section Description",
+        "default": "Everything you need to know about the Honey Infused Lip Oil Tinted Trio."
+      }, {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#fef5d7"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "FAQ Item",
+        "type": "section",
+        "settings": [
+          {
+            "type": "text",
+            "id": "question",
+            "label": "FAQ Question",
+            "default": "Do the 3 lip oils tinted come in a single box?"
+          }, {
+            "type": "text",
+            "id": "answer",
+            "label": "FAQ Answer",
+            "default": "Our Watermelon Sugar, Strawberry Sorbet, and Mango Passion Punch lip oils will be shipped in their individual packaging, not together in a single box."
+          }
+        ]
+      }, {
+        "name": "FAQ Title",
+        "type": "title",
+        "settings": [
+          {
+            "type": "text",
+            "id": "faq_title",
+            "label": "FAQ Title",
+            "default": "GENERAL"
+          }
+        ]
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "FAQ Section",
+        "blocks": [
+          {
+            "type": "section"
+          }, {
+            "type": "title"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

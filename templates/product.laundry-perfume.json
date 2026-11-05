@@ -1,0 +1,224 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "oru_product_rating_rating_J8Enqc": {
+          "type": "shopify://apps/oru-product-rating/blocks/rating/6dd3514e-f5b8-4275-b2b4-8655d3f6cb24",
+          "settings": {
+            "product": "{{product}}",
+            "show_count": true,
+            "show_rating": true,
+            "position": "left"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "custom_liquid_BJKhLF": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0833/0379/2982/files/Untitled_design_8_7ef43393-bb41-4254-82f6-95fa2bc90be3.png?v=1732802293\" alt=\"Image Description\" style=\"max-width: 100%; height: auto;\">"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "oru_product_rating_rating_J8Enqc",
+        "description",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "custom_liquid_BJKhLF",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "multicolumn_pc7eyb": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9xdHga": {
+          "type": "column",
+          "settings": {
+            "title": "Washing Machine",
+            "text": "<p>Pour the laundry perfume into the fabric softener compartment. We recommend using between 10 ml and 20 ml, depending on the amount of laundry in your washing machine. For hand washing, we suggest using a lighter dose.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RW7t9Y": {
+          "type": "column",
+          "settings": {
+            "title": "Hand Wash",
+            "text": "<p>Add the laundry perfume, rinse the laundry, and then leave it in the fragranced water for a few minutes. To ensure a longer fragrance experience, we do not recommend putting your freshly washed laundry in the tumble dryer after using the laundry perfume. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9eYFLU": {
+          "type": "column",
+          "settings": {
+            "title": "Good to know",
+            "text": "<p>Store your laundry perfume in a cool and dry spot. Suitable for temperatures up to 60°C. <br/><br/>Use the laundry perfume along with our detergent sheets for a longer lasting fragrance.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9xdHga",
+        "column_RW7t9Y",
+        "column_9eYFLU"
+      ],
+      "settings": {
+        "title": "How to use",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq_section_AGWVMg": {
+      "type": "faq-section",
+      "blocks": {
+        "section_9DmH3D": {
+          "type": "section",
+          "settings": {
+            "question": "How do I store my laundry perfume?",
+            "answer": "Store your laundry perfume in a cool and dry spot."
+          }
+        },
+        "section_eqRwbn": {
+          "type": "section",
+          "settings": {
+            "question": "How much should I use for 1 single wash?",
+            "answer": "We recommend using between 10 and 20 ML per wash, depending on the amount of laundry. For hand wash we suggest using a lesser dosage."
+          }
+        },
+        "section_Gf6zC9": {
+          "type": "section",
+          "settings": {
+            "question": "Where do I put the laundry perfume?",
+            "answer": "Put the laundry perfume into the fabric softener compartment. We do not recommend putting the laundry perfume directly into your tumble, to avoid any possible stains."
+          }
+        },
+        "section_QPtmEa": {
+          "type": "section",
+          "settings": {
+            "question": "How do I get the best results?",
+            "answer": "To ensure a longer fragrance experience we do not recommend putting your freshly washed laundry in the tumble dryer after using the laundry perfume. Letting it air dry will give the best results."
+          }
+        }
+      },
+      "block_order": [
+        "section_9DmH3D",
+        "section_eqRwbn",
+        "section_Gf6zC9",
+        "section_QPtmEa"
+      ],
+      "settings": {
+        "title": "FREQUENTLY ASKED QUESTIONS",
+        "description": "Everything you need to know about the Mabangó laundry perfume",
+        "background_color": "#fef5d7"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 68
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_pc7eyb",
+    "faq_section_AGWVMg",
+    "related-products"
+  ]
+}

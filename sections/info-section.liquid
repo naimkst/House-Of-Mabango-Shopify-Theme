@@ -1,0 +1,136 @@
+<div class="info-section" style="background-color: {{ section.settings.bg_color }}; margin-top: {{ section.settings.mrg_top}}px; margin-bottom: {{ section.settings.mrg_btn}}px">
+  <div class="info-grid">
+    {% for block in section.blocks %}
+      <div class="info-block">
+        <div class="info-icon">
+          <img
+            src="{{ block.settings.image |  image_url: width: 400 }}"
+            alt=""
+            height=""
+            width="">
+        </div>
+        <p>{{ block.settings.title }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Info Section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#f8f8f8"
+      }, {
+        "type": "range",
+        "id": "mrg_top",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "label": "Margin Top",
+        "default": 20
+      }, {
+        "type": "range",
+        "id": "mrg_btn",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "label": "Margin Bottom",
+        "default": 1
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Info Item",
+        "type": "slider",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Free Shipping"
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Info Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Info Section",
+        "blocks": [
+          {
+            "type": "slider"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  .info-section {
+    padding: 30px 20px;
+  }
+
+  .info-grid {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .info-block {
+    text-align: center;
+  }
+
+
+  /*
+   .info-icon {
+   margin-bottom: 15px;
+   }
+*/
+
+  .info-icon img {
+    width: 55px;
+    height: 55px;
+    color: #333;
+  }
+
+
+  .info-block p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.4;
+    font-style: normal;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .info-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .info-block p {
+      font-size: 14px;
+    }
+    .info-icon img {
+      width: 50px;
+      height: 50px;
+    }
+    .info-icon {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .info-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

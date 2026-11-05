@@ -1,0 +1,183 @@
+<style>
+  .heroSection {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  .heroBox {
+    padding: 70px;
+    position: absolute;
+    width: 40%;
+    left: 70px;
+    bottom: 10px;
+  }
+  .heroBox p {
+    font-style: normal;
+  }
+  img.desktopBG {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  img.mobileBG {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .heroBox {
+      padding: 0;
+      position: absolute;
+      width: 93%;
+      left: 10px;
+      bottom: 20px;
+      text-align: center;
+    }
+    img.mobileBG {
+      display: block;
+    }
+    img.desktopBG {
+      display: none;
+    }
+  }
+</style>
+
+
+<div class="heroSection">
+  <img
+    class="desktopBG"
+    src="{{ section.settings.background_image | image_url: width: 1920 }}"
+    alt=""
+    width=""
+    height="">
+  <img
+    class="mobileBG"
+    src="{{ section.settings.mobile_background_image | image_url: width: 1920 }}"
+    alt=""
+    width=""
+    height="">
+  <div class="heroBox">
+    <div class="heroContent">
+      <h1 style="color: {{ section.settings.title_color }}; font-weight: {{ section.settings.title_weight }}; font-size: {{ section.settings.title_size }}px;">{{ section.settings.title }}</h1>
+      <p style="color: {{ section.settings.description_color }}; font-weight: {{ section.settings.description_weight }}; font-size: {{ section.settings.description_size }}px;">{{ section.settings.description }}</p>
+      <a
+        style="background-color: {{ section.settings.button_bg_color }}; color: {{ section.settings.button_color }}"
+        href="{{ section.settings.button_url }}"
+        class="button button--primary">{{ section.settings.button_text }}</a>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Hero Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_background_image",
+        "label": "Background Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "LAUNDRY DAY IS HERE"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Introducing our very first laundry detergent sheets, creating happy moments through everyday routines."
+      }, {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Shop Now"
+      }, {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color",
+        "default": "#000000"
+      }, {
+        "type": "radio",
+        "id": "title_weight",
+        "label": "Title Weight",
+        "default": "normal",
+        "options": [
+          {
+            "value": "bold",
+            "label": "Bold"
+          }, {
+            "value": "normal",
+            "label": "Normal"
+          }
+        ]
+      }, {
+        "type": "range",
+        "id": "title_size",
+        "label": "Title Size",
+        "default": 15,
+        "min": 9,
+        "max": 100,
+        "step": 1
+      }, {
+        "type": "color",
+        "id": "description_color",
+        "label": "Description Color",
+        "default": "#000000"
+      }, {
+        "type": "radio",
+        "id": "description_weight",
+        "label": "Description Weight",
+        "default": "normal",
+        "options": [
+          {
+            "value": "bold",
+            "label": "Bold"
+          }, {
+            "value": "normal",
+            "label": "Normal"
+          }
+        ]
+      }, {
+        "type": "range",
+        "id": "description_size",
+        "label": "Description Size",
+        "default": 15,
+        "min": 9,
+        "max": 100,
+        "step": 1
+      }, {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button Color",
+        "default": "#000000"
+      }, {
+        "type": "color",
+        "id": "button_bg_color",
+        "label": "Button Background",
+        "default": "#000000"
+      }
+
+    ],
+
+    "presets": [
+      {
+        "name": "Hero Section"
+      }
+    ]
+  }
+{% endschema %}
